@@ -1,0 +1,2409 @@
+UploadAjaxError: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Laravel</title>
+
+    <link
+        rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg viewBox='0 -.11376601 49.74245785 51.31690859' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m49.626 11.564a.809.809 0 0 1 .028.209v10.972a.8.8 0 0 1 -.402.694l-9.209 5.302v10.509c0 .286-.152.55-.4.694l-19.223 11.066c-.044.025-.092.041-.14.058-.018.006-.035.017-.054.022a.805.805 0 0 1 -.41 0c-.022-.006-.042-.018-.063-.026-.044-.016-.09-.03-.132-.054l-19.219-11.066a.801.801 0 0 1 -.402-.694v-32.916c0-.072.01-.142.028-.21.006-.023.02-.044.028-.067.015-.042.029-.085.051-.124.015-.026.037-.047.055-.071.023-.032.044-.065.071-.093.023-.023.053-.04.079-.06.029-.024.055-.05.088-.069h.001l9.61-5.533a.802.802 0 0 1 .8 0l9.61 5.533h.002c.032.02.059.045.088.068.026.02.055.038.078.06.028.029.048.062.072.094.017.024.04.045.054.071.023.04.036.082.052.124.008.023.022.044.028.068a.809.809 0 0 1 .028.209v20.559l8.008-4.611v-10.51c0-.07.01-.141.028-.208.007-.024.02-.045.028-.068.016-.042.03-.085.052-.124.015-.026.037-.047.054-.071.024-.032.044-.065.072-.093.023-.023.052-.04.078-.06.03-.024.056-.05.088-.069h.001l9.611-5.533a.801.801 0 0 1 .8 0l9.61 5.533c.034.02.06.045.09.068.025.02.054.038.077.06.028.029.048.062.072.094.018.024.04.045.054.071.023.039.036.082.052.124.009.023.022.044.028.068zm-1.574 10.718v-9.124l-3.363 1.936-4.646 2.675v9.124l8.01-4.611zm-9.61 16.505v-9.13l-4.57 2.61-13.05 7.448v9.216zm-36.84-31.068v31.068l17.618 10.143v-9.214l-9.204-5.209-.003-.002-.004-.002c-.031-.018-.057-.044-.086-.066-.025-.02-.054-.036-.076-.058l-.002-.003c-.026-.025-.044-.056-.066-.084-.02-.027-.044-.05-.06-.078l-.001-.003c-.018-.03-.029-.066-.042-.1-.013-.03-.03-.058-.038-.09v-.001c-.01-.038-.012-.078-.016-.117-.004-.03-.012-.06-.012-.09v-21.483l-4.645-2.676-3.363-1.934zm8.81-5.994-8.007 4.609 8.005 4.609 8.006-4.61-8.006-4.608zm4.164 28.764 4.645-2.674v-20.096l-3.363 1.936-4.646 2.675v20.096zm24.667-23.325-8.006 4.609 8.006 4.609 8.005-4.61zm-.801 10.605-4.646-2.675-3.363-1.936v9.124l4.645 2.674 3.364 1.937zm-18.422 20.561 11.743-6.704 5.87-3.35-8-4.606-9.211 5.303-8.395 4.833z' fill='%23ff2d20'/%3E%3C/svg%3E"
+    />
+
+    <style>/*! tailwindcss v4.1.12 | MIT License | https://tailwindcss.com */@layer properties{@supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){*,:before,:after,::backdrop{--tw-rotate-x:initial;--tw-rotate-y:initial;--tw-rotate-z:initial;--tw-skew-x:initial;--tw-skew-y:initial;--tw-divide-x-reverse:0;--tw-border-style:solid;--tw-divide-y-reverse:0;--tw-leading:initial;--tw-font-weight:initial;--tw-shadow:0 0 #0000;--tw-shadow-color:initial;--tw-shadow-alpha:100%;--tw-inset-shadow:0 0 #0000;--tw-inset-shadow-color:initial;--tw-inset-shadow-alpha:100%;--tw-ring-color:initial;--tw-ring-shadow:0 0 #0000;--tw-inset-ring-color:initial;--tw-inset-ring-shadow:0 0 #0000;--tw-ring-inset:initial;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-offset-shadow:0 0 #0000;--tw-blur:initial;--tw-brightness:initial;--tw-contrast:initial;--tw-grayscale:initial;--tw-hue-rotate:initial;--tw-invert:initial;--tw-opacity:initial;--tw-saturate:initial;--tw-sepia:initial;--tw-drop-shadow:initial;--tw-drop-shadow-color:initial;--tw-drop-shadow-alpha:100%;--tw-drop-shadow-size:initial;--tw-duration:initial;--tw-ease:initial;--tw-animation-delay:0s;--tw-animation-direction:normal;--tw-animation-duration:initial;--tw-animation-fill-mode:none;--tw-animation-iteration-count:1;--tw-enter-blur:0;--tw-enter-opacity:1;--tw-enter-rotate:0;--tw-enter-scale:1;--tw-enter-translate-x:0;--tw-enter-translate-y:0;--tw-exit-blur:0;--tw-exit-opacity:1;--tw-exit-rotate:0;--tw-exit-scale:1;--tw-exit-translate-x:0;--tw-exit-translate-y:0;--tw-backdrop-blur:initial;--tw-backdrop-brightness:initial;--tw-backdrop-contrast:initial;--tw-backdrop-grayscale:initial;--tw-backdrop-hue-rotate:initial;--tw-backdrop-invert:initial;--tw-backdrop-opacity:initial;--tw-backdrop-saturate:initial;--tw-backdrop-sepia:initial}}}@layer theme{:root,:host{--font-sans:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--color-amber-200:oklch(92.4% .12 95.746);--color-amber-300:oklch(87.9% .169 91.605);--color-amber-500:oklch(76.9% .188 70.08);--color-amber-600:oklch(66.6% .179 58.318);--color-amber-800:oklch(47.3% .137 46.201);--color-amber-900:oklch(41.4% .112 45.904);--color-amber-950:oklch(27.9% .077 45.635);--color-emerald-200:oklch(90.5% .093 164.15);--color-emerald-400:oklch(76.5% .177 163.223);--color-emerald-500:oklch(69.6% .17 162.48);--color-emerald-600:oklch(59.6% .145 163.225);--color-emerald-900:oklch(37.8% .077 168.94);--color-blue-100:oklch(93.2% .032 255.585);--color-blue-300:oklch(80.9% .105 251.813);--color-blue-500:oklch(62.3% .214 259.815);--color-blue-600:oklch(54.6% .245 262.881);--color-blue-700:oklch(48.8% .243 264.376);--color-blue-800:oklch(42.4% .199 265.638);--color-blue-900:oklch(37.9% .146 265.522);--color-blue-950:oklch(28.2% .091 267.935);--color-rose-100:oklch(94.1% .03 12.58);--color-rose-200:oklch(89.2% .058 10.001);--color-rose-500:oklch(64.5% .246 16.439);--color-rose-600:oklch(58.6% .253 17.585);--color-rose-900:oklch(41% .159 10.272);--color-rose-950:oklch(27.1% .105 12.094);--color-neutral-50:oklch(98.5% 0 0);--color-neutral-100:oklch(97% 0 0);--color-neutral-200:oklch(92.2% 0 0);--color-neutral-300:oklch(87% 0 0);--color-neutral-400:oklch(70.8% 0 0);--color-neutral-500:oklch(55.6% 0 0);--color-neutral-600:oklch(43.9% 0 0);--color-neutral-700:oklch(37.1% 0 0);--color-neutral-800:oklch(26.9% 0 0);--color-neutral-900:oklch(20.5% 0 0);--color-neutral-950:oklch(14.5% 0 0);--color-black:#000;--color-white:#fff;--spacing:.25rem;--container-7xl:80rem;--text-xs:.75rem;--text-xs--line-height:calc(1/.75);--text-sm:.875rem;--text-sm--line-height:calc(1.25/.875);--text-base:1rem;--text-base--line-height: 1.5 ;--text-lg:1.125rem;--text-lg--line-height:calc(1.75/1.125);--text-xl:1.25rem;--text-xl--line-height:calc(1.75/1.25);--text-3xl:1.875rem;--text-3xl--line-height: 1.2 ;--font-weight-light:300;--font-weight-medium:500;--font-weight-semibold:600;--radius-md:.375rem;--radius-lg:.5rem;--radius-xl:.75rem;--ease-in-out:cubic-bezier(.4,0,.2,1);--blur-md:12px;--default-transition-duration:.15s;--default-transition-timing-function:cubic-bezier(.4,0,.2,1);--default-font-family:var(--font-sans);--default-mono-font-family:var(--font-mono)}}@layer base{*,:after,:before,::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html,:host{-webkit-text-size-adjust:100%;tab-size:4;line-height:1.5;font-family:var(--default-font-family,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr{heigh</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden bg-neutral-50 dark:bg-neutral-900 dark:text-white scheme-light-dark">
+    <div class="min-h-dvh">
+        <section
+    class="w-full max-w-7xl mx-auto p-4 sm:p-14 border-x border-dashed border-neutral-300 dark:border-white/[9%] px-6 py-0 sm:py-0"
+>
+    <script>
+    const markdown = '# Symfony\\Component\\Routing\\Exception\\RouteNotFoundException - Internal Server Error\n\nRoute [login] not defined.\n\nPHP 8.2.30\nLaravel 12.58.0\n127.0.0.1:8000\n\n## Stack Trace\n\n0 - vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:534\n1 - vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php:870\n2 - vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php:278\n3 - vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php:117\n4 - vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php:104\n5 - vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php:87\n6 - vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php:61\n7 - vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:219\n8 - vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:137\n9 - vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php:821\n10 - vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php:800\n11 - vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php:764\n12 - vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php:753\n13 - vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php:200\n14 - vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:180\n15 - vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php:21\n16 - vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php:31\n17 - vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:219\n18 - vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php:21\n19 - vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php:51\n20 - vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:219\n21 - vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php:27\n22 - vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:219\n23 - vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php:109\n24 - vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:219\n25 - vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php:74\n26 - vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:219\n27 - vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php:58\n28 - vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:219\n29 - vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php:22\n30 - vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:219\n31 - vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePathEncoding.php:26\n32 - vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:219\n33 - vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:137\n34 - vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php:175\n35 - vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php:144\n36 - vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php:1220\n37 - public\\index.php:20\n38 - vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php:23\n\n## Request\n\nPOST \/api\/user\/update\/img\n\n## Headers\n\n* **host**: 127.0.0.1:8000\n* **connection**: keep-alive\n* **content-length**: 18194\n* **sec-ch-ua-platform**: \u0022Windows\u0022\n* **user-agent**: Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/148.0.0.0 Safari\/537.36\n* **sec-ch-ua**: \u0022Chromium\u0022;v=\u0022148\u0022, \u0022Google Chrome\u0022;v=\u0022148\u0022, \u0022Not\/A)Brand\u0022;v=\u002299\u0022\n* **content-type**: multipart\/form-data; boundary=----WebKitFormBoundaryATBv59MqccR21fA4\n* **sec-ch-ua-mobile**: ?0\n* **accept**: *\/*\n* **origin**: http:\/\/localhost:8001\n* **sec-fetch-site**: cross-site\n* **sec-fetch-mode**: cors\n* **sec-fetch-dest**: empty\n* **referer**: http:\/\/localhost:8001\/\n* **accept-encoding**: gzip, deflate, br, zstd\n* **accept-language**: zh-CN,zh;q=0.9\n\n## Route Context\n\ncontroller: App\\Http\\Controllers\\Api\\UserController@uploadAvatar\nmiddleware: api, auth:sanctum\n\n## Route Parameters\n\nNo route parameter data available.\n\n## Database Queries\n\nNo database queries detected.\n'
+</script>
+
+<div
+    class="flex items-center justify-between"
+    x-data="{
+        copied: false,
+        async copyToClipboard() {
+            try {
+                await window.copyToClipboard(markdown);
+                this.copied = true;
+                setTimeout(() => { this.copied = false }, 3000);
+            } catch (err) {
+                console.error('Failed to copy the markdown: ', err);
+            }
+        }
+    }"
+>
+    <div class="flex items-center gap-2 h-[56px]">
+        <div class="w-[18px] h-[18px] flex items-center justify-center bg-rose-500 rounded-md">
+            <svg width="2" height="10" class="text-white" viewBox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.00006 6.3188C1.41416 6.3188 1.75006 5.98295 1.75006 5.56885V1.43115C1.75006 1.01705 1.41416 0.681152 1.00006 0.681152C0.585961 0.681152 0.250061 1.01705 0.250061 1.43115V5.56885C0.250061 5.98295 0.585961 6.3188 1.00006 6.3188Z" fill="currentColor" />
+                <path d="M1.00006 9.41699C1.55235 9.41699 2.00007 8.96929 2.00007 8.41699C2.00007 7.86469 1.55235 7.41699 1.00006 7.41699C0.447781 7.41699 6.10352e-05 7.86469 6.10352e-05 8.41699C6.10352e-05 8.96929 0.447781 9.41699 1.00006 9.41699Z" fill="currentColor "/>
+            </svg>
+        </div>
+        <div class="font-medium text-sm text-neutral-900 dark:text-white">
+            Internal Server Error
+        </div>
+    </div>
+
+    <button
+        x-cloak
+        class="text-sm rounded-md border px-3 h-8 flex items-center gap-2 transition-colors duration-200 ease-in-out cursor-pointer shadow-xs text-neutral-600 dark:text-neutral-400 bg-white/5 border-neutral-200 hover:bg-neutral-100 dark:bg-white/5 dark:border-white/10 dark:hover:bg-white/10"
+        @click="copyToClipboard()"
+    >
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" class="w-3 h-3" x-show="!copied">
+  <g clip-path="url(#clip0_14732_6079)">
+    <path d="M4.25 4.25012V1.25012H10.75V7.75012H7.75M7.75 4.25012H1.25V10.7501H7.75V4.25012Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_14732_6079">
+      <rect width="12" height="12" />
+    </clipPath>
+  </defs>
+</svg>
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-3 h-3 text-emerald-500" x-show="copied">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+</svg>
+        <span x-text="copied ? 'Copied to clipboard' : 'Copy as Markdown'"></span>
+    </button>
+</div>
+</section>
+
+    <div class="h-0 w-full relative">
+    <div class="absolute top-[-1px] left-0 right-0 bottom-0 border-t border-dashed border-neutral-300 dark:border-white/[9%]"></div>
+</div>
+
+    <section
+    class="w-full max-w-7xl mx-auto p-4 sm:p-14 border-x border-dashed border-neutral-300 dark:border-white/[9%] flex flex-col gap-8 py-0 sm:py-0"
+>
+    <div class="flex flex-col pt-8 sm:pt-16 overflow-x-auto">
+    <div class="flex flex-col gap-5 mb-8">
+        <h1 class="text-3xl font-semibold text-neutral-950 dark:text-white">Symfony\Component\Routing\Exception\RouteNotFoundException</h1>
+        <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 -mt-3 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php:534">
+                    vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php<span class="text-neutral-500">:534</span>
+            </span>
+</div>
+        <p class="text-xl font-light text-neutral-800 dark:text-neutral-300">
+            Route [login] not defined.
+        </p>
+    </div>
+
+    <div class="flex items-start gap-2 mb-8 sm:mb-16">
+        <div class="bg-white dark:bg-white/[3%] border border-neutral-200 dark:border-white/10 divide-x divide-neutral-200 dark:divide-white/10 rounded-md shadow-xs flex items-center gap-0.5">
+            <div class="flex items-center gap-1.5 h-6 px-[6px] font-mono text-[13px]">
+                <span class="text-neutral-400 dark:text-neutral-500">LARAVEL</span>
+                <span class="text-neutral-500 dark:text-neutral-300">12.58.0</span>
+            </div>
+            <div class="flex items-center gap-1.5 h-6 px-[6px] font-mono text-[13px]">
+                <span class="text-neutral-400 dark:text-neutral-500">PHP</span>
+                <span class="text-neutral-500 dark:text-neutral-300">8.2.30</span>
+            </div>
+        </div>
+        <div class="inline-flex w-fit shrink-0 items-center justify-center gap-1 font-mono leading-3 uppercase transition-colors dark:border [&amp;_svg]:size-2.5 h-6 min-w-5 rounded-md px-1.5 text-xs/none bg-rose-200 text-rose-900 dark:border-rose-900 dark:bg-rose-950 dark:text-rose-100 dark:[&amp;_svg]:!text-white">
+    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5">
+    <g clip-path="url(#clip0_14732_6105)">
+        <path d="M9.87466 7.8287L5.92654 0.549947C5.82917 0.369362 5.68068 0.221523 5.49966 0.124947C5.25374 -0.00665839 4.9658 -0.0358401 4.69847 0.0437494C4.43115 0.123339 4.20606 0.305262 4.07216 0.549947L0.124664 7.8287C0.0383472 7.98887 -0.00481098 8.16875 -0.000569449 8.35066C0.00367208 8.53256 0.0551674 8.71024 0.148856 8.86622C0.242546 9.0222 0.375205 9.15112 0.533798 9.24031C0.692391 9.32951 0.871462 9.37591 1.05341 9.37495H8.94591C9.12031 9.37495 9.29203 9.33202 9.44591 9.24995C9.56783 9.18524 9.67572 9.09703 9.76338 8.99041C9.85104 8.8838 9.91672 8.76088 9.95663 8.62876C9.99655 8.49663 10.0099 8.35791 9.99595 8.22059C9.98199 8.08328 9.94036 7.95009 9.87466 7.8287ZM4.99966 8.12495C4.87605 8.12495 4.75521 8.08829 4.65243 8.01962C4.54965 7.95094 4.46954 7.85333 4.42224 7.73912C4.37493 7.62492 4.36256 7.49925 4.38667 7.37802C4.41079 7.25678 4.47031 7.14541 4.55772 7.05801C4.64513 6.9706 4.75649 6.91107 4.87773 6.88696C4.99897 6.86284 5.12464 6.87522 5.23884 6.92252C5.35304 6.96983 5.45066 7.04993 5.51933 7.15272C5.58801 7.2555 5.62466 7.37633 5.62466 7.49995C5.62466 7.66571 5.55882 7.82468 5.44161 7.94189C5.3244 8.0591 5.16542 8.12495 4.99966 8.12495ZM5.62466 5.93745C5.62466 6.02033 5.59174 6.09981 5.53313 6.15842C5.47453 6.21702 5.39504 6.24995 5.31216 6.24995H4.68716C4.60428 6.24995 4.5248 6.21702 4.46619 6.15842C4.40759 6.09981 4.37466 6.02033 4.37466 5.93745V3.43745C4.37466 3.35457 4.40759 3.27508 4.46619 3.21648C4.5248 3.15787 4.60428 3.12495 4.68716 3.12495H5.31216C5.39504 3.12495 5.47453 3.15787 5.53313 3.21648C5.59174 3.27508 5.62466 3.35457 5.62466 3.43745V5.93745Z" fill="currentColor" />
+    </g>
+    <defs>
+        <clipPath id="clip0_14732_6105">
+            <rect width="10" height="10" />
+        </clipPath>
+    </defs>
+</svg>
+            UNHANDLED
+</div>
+        <div class="inline-flex w-fit shrink-0 items-center justify-center gap-1 font-mono leading-3 uppercase transition-colors dark:border [&amp;_svg]:size-2.5 h-6 min-w-5 rounded-md px-1.5 text-xs/none bg-rose-600 dark:border-rose-500 dark:bg-rose-600 text-white dark:text-white [&amp;_svg]:!text-white">
+    CODE 0
+</div>
+    </div>
+
+    <div
+    x-data="{
+        copied: false,
+        async copyToClipboard() {
+            try {
+                await window.copyToClipboard('http://127.0.0.1:8000/api/user/update/img');
+                this.copied = true;
+                setTimeout(() => { this.copied = false }, 3000);
+            } catch (err) {
+                console.error('Failed to copy the requestURL: ', err);
+            }
+        }
+    }"
+    class="bg-white dark:bg-[#1a1a1a] border border-neutral-200 dark:border-white/10 rounded-lg flex items-center justify-between h-10 px-2 shadow-xs relative z-50"
+>
+    <div class="flex items-center gap-3 w-full">
+        <div class="inline-flex w-fit shrink-0 items-center justify-center gap-1 font-mono leading-3 uppercase transition-colors dark:border [&amp;_svg]:size-2.5 h-6 min-w-5 rounded-md px-1.5 text-xs/none bg-rose-600 dark:border-rose-500 dark:bg-rose-600 text-white dark:text-white [&amp;_svg]:!text-white">
+    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5">
+    <g clip-path="url(#clip0_14732_6105)">
+        <path d="M9.87466 7.8287L5.92654 0.549947C5.82917 0.369362 5.68068 0.221523 5.49966 0.124947C5.25374 -0.00665839 4.9658 -0.0358401 4.69847 0.0437494C4.43115 0.123339 4.20606 0.305262 4.07216 0.549947L0.124664 7.8287C0.0383472 7.98887 -0.00481098 8.16875 -0.000569449 8.35066C0.00367208 8.53256 0.0551674 8.71024 0.148856 8.86622C0.242546 9.0222 0.375205 9.15112 0.533798 9.24031C0.692391 9.32951 0.871462 9.37591 1.05341 9.37495H8.94591C9.12031 9.37495 9.29203 9.33202 9.44591 9.24995C9.56783 9.18524 9.67572 9.09703 9.76338 8.99041C9.85104 8.8838 9.91672 8.76088 9.95663 8.62876C9.99655 8.49663 10.0099 8.35791 9.99595 8.22059C9.98199 8.08328 9.94036 7.95009 9.87466 7.8287ZM4.99966 8.12495C4.87605 8.12495 4.75521 8.08829 4.65243 8.01962C4.54965 7.95094 4.46954 7.85333 4.42224 7.73912C4.37493 7.62492 4.36256 7.49925 4.38667 7.37802C4.41079 7.25678 4.47031 7.14541 4.55772 7.05801C4.64513 6.9706 4.75649 6.91107 4.87773 6.88696C4.99897 6.86284 5.12464 6.87522 5.23884 6.92252C5.35304 6.96983 5.45066 7.04993 5.51933 7.15272C5.58801 7.2555 5.62466 7.37633 5.62466 7.49995C5.62466 7.66571 5.55882 7.82468 5.44161 7.94189C5.3244 8.0591 5.16542 8.12495 4.99966 8.12495ZM5.62466 5.93745C5.62466 6.02033 5.59174 6.09981 5.53313 6.15842C5.47453 6.21702 5.39504 6.24995 5.31216 6.24995H4.68716C4.60428 6.24995 4.5248 6.21702 4.46619 6.15842C4.40759 6.09981 4.37466 6.02033 4.37466 5.93745V3.43745C4.37466 3.35457 4.40759 3.27508 4.46619 3.21648C4.5248 3.15787 4.60428 3.12495 4.68716 3.12495H5.31216C5.39504 3.12495 5.47453 3.15787 5.53313 3.21648C5.59174 3.27508 5.62466 3.35457 5.62466 3.43745V5.93745Z" fill="currentColor" />
+    </g>
+    <defs>
+        <clipPath id="clip0_14732_6105">
+            <rect width="10" height="10" />
+        </clipPath>
+    </defs>
+</svg>
+            500
+</div>
+        <div class="inline-flex w-fit shrink-0 items-center justify-center gap-1 font-mono leading-3 uppercase transition-colors dark:border [&amp;_svg]:size-2.5 h-6 min-w-5 rounded-md px-1.5 text-xs/none bg-emerald-200 text-emerald-900 dark:border-emerald-600 dark:bg-emerald-900/70 dark:text-emerald-400">
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5">
+    <path d="M5.99996 10.6876C7.10936 10.6876 8.00871 8.58896 8.00871 6.00012C8.00871 3.41129 7.10936 1.31262 5.99996 1.31262C4.89056 1.31262 3.99121 3.41129 3.99121 6.00012C3.99121 8.58896 4.89056 10.6876 5.99996 10.6876Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1.3125 6.00012H10.6875" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6 10.6876C8.58883 10.6876 10.6875 8.58896 10.6875 6.00012C10.6875 3.41129 8.58883 1.31262 6 1.31262C3.41117 1.31262 1.3125 3.41129 1.3125 6.00012C1.3125 8.58896 3.41117 10.6876 6 10.6876Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+    POST
+</div>
+        <div class="flex-1 text-sm font-light truncate text-neutral-950 dark:text-white">
+            <span data-tippy-content="http://127.0.0.1:8000/api/user/update/img">
+                http://127.0.0.1:8000/api/user/update/img
+            </span>
+        </div>
+        <button
+            x-cloak
+            @click="copyToClipboard()"
+            class="rounded-md w-6 h-6 flex flex-shrink-0 items-center justify-center cursor-pointer border transition-colors duration-200 ease-in-out bg-white/5 border-neutral-200 hover:bg-neutral-100 dark:bg-white/5 dark:border-white/10 dark:hover:bg-white/10"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" class="w-3 h-3 text-neutral-400" x-show="!copied">
+  <g clip-path="url(#clip0_14732_6079)">
+    <path d="M4.25 4.25012V1.25012H10.75V7.75012H7.75M7.75 4.25012H1.25V10.7501H7.75V4.25012Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_14732_6079">
+      <rect width="12" height="12" />
+    </clipPath>
+  </defs>
+</svg>
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-3 h-3 text-emerald-500" x-show="copied">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+</svg>
+        </button>
+    </div>
+</div>
+</div>
+</section>
+
+    <div class="h-0 w-full relative -mt-5 -z-10">
+    <div class="absolute top-[-1px] left-0 right-0 bottom-0 border-t border-dashed border-neutral-300 dark:border-white/[9%]"></div>
+</div>
+
+    <section
+    class="w-full max-w-7xl mx-auto p-4 sm:p-14 border-x border-dashed border-neutral-300 dark:border-white/[9%] flex flex-col gap-8 pt-14"
+>
+    <div class="flex flex-col gap-2.5 bg-neutral-50 dark:bg-white/1 border border-neutral-200 dark:border-neutral-800 rounded-xl p-2.5 shadow-xs">
+    <div class="flex items-center gap-2.5 p-2">
+        <div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-white/5 rounded-md w-6 h-6 flex items-center justify-center p-1">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5 text-blue-500 dark:text-emerald-500">
+    <g clip-path="url(#clip0_14732_6105)">
+        <path d="M9.87466 7.8287L5.92654 0.549947C5.82917 0.369362 5.68068 0.221523 5.49966 0.124947C5.25374 -0.00665839 4.9658 -0.0358401 4.69847 0.0437494C4.43115 0.123339 4.20606 0.305262 4.07216 0.549947L0.124664 7.8287C0.0383472 7.98887 -0.00481098 8.16875 -0.000569449 8.35066C0.00367208 8.53256 0.0551674 8.71024 0.148856 8.86622C0.242546 9.0222 0.375205 9.15112 0.533798 9.24031C0.692391 9.32951 0.871462 9.37591 1.05341 9.37495H8.94591C9.12031 9.37495 9.29203 9.33202 9.44591 9.24995C9.56783 9.18524 9.67572 9.09703 9.76338 8.99041C9.85104 8.8838 9.91672 8.76088 9.95663 8.62876C9.99655 8.49663 10.0099 8.35791 9.99595 8.22059C9.98199 8.08328 9.94036 7.95009 9.87466 7.8287ZM4.99966 8.12495C4.87605 8.12495 4.75521 8.08829 4.65243 8.01962C4.54965 7.95094 4.46954 7.85333 4.42224 7.73912C4.37493 7.62492 4.36256 7.49925 4.38667 7.37802C4.41079 7.25678 4.47031 7.14541 4.55772 7.05801C4.64513 6.9706 4.75649 6.91107 4.87773 6.88696C4.99897 6.86284 5.12464 6.87522 5.23884 6.92252C5.35304 6.96983 5.45066 7.04993 5.51933 7.15272C5.58801 7.2555 5.62466 7.37633 5.62466 7.49995C5.62466 7.66571 5.55882 7.82468 5.44161 7.94189C5.3244 8.0591 5.16542 8.12495 4.99966 8.12495ZM5.62466 5.93745C5.62466 6.02033 5.59174 6.09981 5.53313 6.15842C5.47453 6.21702 5.39504 6.24995 5.31216 6.24995H4.68716C4.60428 6.24995 4.5248 6.21702 4.46619 6.15842C4.40759 6.09981 4.37466 6.02033 4.37466 5.93745V3.43745C4.37466 3.35457 4.40759 3.27508 4.46619 3.21648C4.5248 3.15787 4.60428 3.12495 4.68716 3.12495H5.31216C5.39504 3.12495 5.47453 3.15787 5.53313 3.21648C5.59174 3.27508 5.62466 3.35457 5.62466 3.43745V5.93745Z" fill="currentColor" />
+    </g>
+    <defs>
+        <clipPath id="clip0_14732_6105">
+            <rect width="10" height="10" />
+        </clipPath>
+    </defs>
+</svg>
+        </div>
+        <h3 class="text-base font-semibold text-neutral-900 dark:text-white">Exception trace</h3>
+    </div>
+
+    <div class="flex flex-col gap-1.5">
+                                    <div
+    x-data="{ expanded: false }"
+    class="group rounded-lg border border-neutral-200 dark:border-white/5"
+    :class="{
+        'bg-white dark:bg-white/5 shadow-xs': expanded,
+        'border-dashed border-neutral-300 bg-neutral-50 opacity-90 dark:border-white/10 dark:bg-white/1': !expanded,
+    }"
+>
+    <div
+        class="flex h-11 cursor-pointer items-center gap-3 rounded-lg pr-2.5 pl-4 hover:bg-white/50 dark:hover:bg-white/2"
+        @click="expanded = !expanded"
+    >
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-neutral-400" x-show="!expanded" x-cloak="x-cloak">
+    <path d="M2.75 2.75H5.614L5.316 2.114C5.069 1.587 4.54 1.25 3.958 1.25H2.25C1.422 1.25 0.75 1.922 0.75 2.75V4.75C0.75 3.645 1.645 2.75 2.75 2.75Z" />
+    <path d="M0.75 4.75V2.75C0.75 1.922 1.422 1.25 2.25 1.25H3.958C4.54 1.25 5.069 1.587 5.316 2.114L5.614 2.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M2.75 2.75H9.25C10.355 2.75 11.25 3.645 11.25 4.75V8.25C11.25 9.355 10.355 10.25 9.25 10.25H2.75C1.645 10.25 0.75 9.355 0.75 8.25V4.75C0.75 3.645 1.645 2.75 2.75 2.75Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-blue-500 dark:text-emerald-500" x-show="expanded">
+    <g clip-path="url(#clip0_14732_6211)">
+        <path d="M1.75 5.25V2.75C1.75 1.922 2.422 1.25 3.25 1.25H4.202C4.808 1.25 5.381 1.525 5.761 1.998L6.364 2.75H8.25C9.355 2.75 10.25 3.645 10.25 4.75V5.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.46801 5.25H9.53101C10.44 5.25 11.14 6.052 11.017 6.953L10.735 9.021C10.6 10.012 9.75301 10.751 8.75301 10.751H3.24601C2.24601 10.751 1.39901 10.012 1.26401 9.021L0.982011 6.953C0.859011 6.052 1.55901 5.25 2.46801 5.25Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <defs>
+        <clipPath id="clip0_14732_6211">
+            <rect width="12" height="12" />
+        </clipPath>
+    </defs>
+</svg>
+
+        <div class="flex-1 font-mono text-xs leading-3 text-neutral-900 dark:text-neutral-400">
+            37 vendor frames
+        </div>
+
+        <button
+            x-cloak
+            type="button"
+            class="flex h-6 w-6 cursor-pointer items-center justify-center rounded-md dark:border dark:border-white/8 group-hover:text-blue-500 group-hover:dark:text-emerald-500"
+            :class="{
+                'text-blue-500 dark:text-emerald-500 dark:bg-white/5': expanded,
+                'text-neutral-500 dark:text-neutral-500 dark:bg-white/3': !expanded,
+            }"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none" x-show="expanded">
+  <g clip-path="url(#clip0_14550_6168)">
+    <path d="M6.75 11.0001L4 8.25012L1.25 11.0001" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6.75 1.50012L4 4.25012L1.25 1.50012" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_14550_6168">
+      <rect width="8" height="11" fill="white" style="fill:white;fill-opacity:1;" transform="translate(0 0.500122)"/>
+    </clipPath>
+  </defs>
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" x-show="!expanded">
+  <g clip-path="url(#clip0_14550_6155)">
+    <path d="M8.75 8.25012L6 11.0001L3.25 8.25012" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8.75 3.75012L6 1.00012L3.25 3.75012" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_14550_6155">
+      <rect width="12" height="12" fill="white" style="fill:white;fill-opacity:1;"/>
+    </clipPath>
+  </defs>
+</svg>
+        </button>
+    </div>
+
+    <div x-cloak class="flex flex-col rounded-b-lg divide-y divide-neutral-200 border-t border-neutral-200 dark:divide-white/5 dark:border-white/5" x-show="expanded">
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Routing\\UrlGenerator-\u003Eroute(string, array, boolean)',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Routing\UrlGenerator-&gt;route(string, array, boolean)"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Routing\UrlGenerator-&gt;route(string, array, boolean)</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php:534">
+                    vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php<span class="text-neutral-500">:534</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Routing\\UrlGenerator-\u003Eroute(string, array, boolean)',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Routing\UrlGenerator-&gt;route(string, array, boolean)"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Routing\UrlGenerator-&gt;route(string, array, boolean)</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Foundation\helpers.php:870">
+                    vendor\laravel\framework\src\Illuminate\Foundation\helpers.php<span class="text-neutral-500">:870</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'route(string)',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="route(string)"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>route(string)</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Foundation\Configuration\ApplicationBuilder.php:278">
+                    vendor\laravel\framework\src\Illuminate\Foundation\Configuration\ApplicationBuilder.php<span class="text-neutral-500">:278</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'call_user_func(object(Closure), object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="call_user_func(object(Closure), object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>call_user_func(object(Closure), object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php:117">
+                    vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php<span class="text-neutral-500">:117</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Auth\\Middleware\\Authenticate-\u003EredirectTo(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Auth\Middleware\Authenticate-&gt;redirectTo(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Auth\Middleware\Authenticate-&gt;redirectTo(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php:104">
+                    vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php<span class="text-neutral-500">:104</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Auth\\Middleware\\Authenticate-\u003Eunauthenticated(object(Illuminate\\Http\\Request), array)',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Auth\Middleware\Authenticate-&gt;unauthenticated(object(Illuminate\Http\Request), array)"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Auth\Middleware\Authenticate-&gt;unauthenticated(object(Illuminate\Http\Request), array)</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php:87">
+                    vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php<span class="text-neutral-500">:87</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Auth\\Middleware\\Authenticate-\u003Eauthenticate(object(Illuminate\\Http\\Request), array)',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Auth\Middleware\Authenticate-&gt;authenticate(object(Illuminate\Http\Request), array)"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Auth\Middleware\Authenticate-&gt;authenticate(object(Illuminate\Http\Request), array)</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php:61">
+                    vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php<span class="text-neutral-500">:61</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Auth\\Middleware\\Authenticate-\u003Ehandle(object(Illuminate\\Http\\Request), object(Closure), string)',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Auth\Middleware\Authenticate-&gt;handle(object(Illuminate\Http\Request), object(Closure), string)"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Auth\Middleware\Authenticate-&gt;handle(object(Illuminate\Http\Request), object(Closure), string)</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php:219">
+                    vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php<span class="text-neutral-500">:219</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Pipeline\\Pipeline-\u003EIlluminate\\Pipeline\\{closure}(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php:137">
+                    vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php<span class="text-neutral-500">:137</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Pipeline\\Pipeline-\u003Ethen(object(Closure))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Pipeline\Pipeline-&gt;then(object(Closure))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Pipeline\Pipeline-&gt;then(object(Closure))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Routing\Router.php:821">
+                    vendor\laravel\framework\src\Illuminate\Routing\Router.php<span class="text-neutral-500">:821</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Routing\\Router-\u003ErunRouteWithinStack(object(Illuminate\\Routing\\Route), object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Routing\Router-&gt;runRouteWithinStack(object(Illuminate\Routing\Route), object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Routing\Router-&gt;runRouteWithinStack(object(Illuminate\Routing\Route), object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Routing\Router.php:800">
+                    vendor\laravel\framework\src\Illuminate\Routing\Router.php<span class="text-neutral-500">:800</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Routing\\Router-\u003ErunRoute(object(Illuminate\\Http\\Request), object(Illuminate\\Routing\\Route))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Routing\Router-&gt;runRoute(object(Illuminate\Http\Request), object(Illuminate\Routing\Route))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Routing\Router-&gt;runRoute(object(Illuminate\Http\Request), object(Illuminate\Routing\Route))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Routing\Router.php:764">
+                    vendor\laravel\framework\src\Illuminate\Routing\Router.php<span class="text-neutral-500">:764</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Routing\\Router-\u003EdispatchToRoute(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Routing\Router-&gt;dispatchToRoute(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Routing\Router-&gt;dispatchToRoute(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Routing\Router.php:753">
+                    vendor\laravel\framework\src\Illuminate\Routing\Router.php<span class="text-neutral-500">:753</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Routing\\Router-\u003Edispatch(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Routing\Router-&gt;dispatch(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Routing\Router-&gt;dispatch(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php:200">
+                    vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php<span class="text-neutral-500">:200</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Foundation\\Http\\Kernel-\u003EIlluminate\\Foundation\\Http\\{closure}(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Foundation\Http\Kernel-&gt;Illuminate\Foundation\Http\{closure}(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Foundation\Http\Kernel-&gt;Illuminate\Foundation\Http\{closure}(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php:180">
+                    vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php<span class="text-neutral-500">:180</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Pipeline\\Pipeline-\u003EIlluminate\\Pipeline\\{closure}(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php:21">
+                    vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php<span class="text-neutral-500">:21</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest-\u003Ehandle(object(Illuminate\\Http\\Request), object(Closure))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(object(Illuminate\Http\Request), object(Closure))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(object(Illuminate\Http\Request), object(Closure))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php:31">
+                    vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php<span class="text-neutral-500">:31</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull-\u003Ehandle(object(Illuminate\\Http\\Request), object(Closure))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull-&gt;handle(object(Illuminate\Http\Request), object(Closure))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull-&gt;handle(object(Illuminate\Http\Request), object(Closure))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php:219">
+                    vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php<span class="text-neutral-500">:219</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Pipeline\\Pipeline-\u003EIlluminate\\Pipeline\\{closure}(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php:21">
+                    vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php<span class="text-neutral-500">:21</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest-\u003Ehandle(object(Illuminate\\Http\\Request), object(Closure))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(object(Illuminate\Http\Request), object(Closure))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(object(Illuminate\Http\Request), object(Closure))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php:51">
+                    vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php<span class="text-neutral-500">:51</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Foundation\\Http\\Middleware\\TrimStrings-\u003Ehandle(object(Illuminate\\Http\\Request), object(Closure))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Foundation\Http\Middleware\TrimStrings-&gt;handle(object(Illuminate\Http\Request), object(Closure))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Foundation\Http\Middleware\TrimStrings-&gt;handle(object(Illuminate\Http\Request), object(Closure))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php:219">
+                    vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php<span class="text-neutral-500">:219</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Pipeline\\Pipeline-\u003EIlluminate\\Pipeline\\{closure}(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php:27">
+                    vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php<span class="text-neutral-500">:27</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Http\\Middleware\\ValidatePostSize-\u003Ehandle(object(Illuminate\\Http\\Request), object(Closure))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Http\Middleware\ValidatePostSize-&gt;handle(object(Illuminate\Http\Request), object(Closure))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Http\Middleware\ValidatePostSize-&gt;handle(object(Illuminate\Http\Request), object(Closure))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php:219">
+                    vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php<span class="text-neutral-500">:219</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Pipeline\\Pipeline-\u003EIlluminate\\Pipeline\\{closure}(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php:109">
+                    vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php<span class="text-neutral-500">:109</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance-\u003Ehandle(object(Illuminate\\Http\\Request), object(Closure))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance-&gt;handle(object(Illuminate\Http\Request), object(Closure))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance-&gt;handle(object(Illuminate\Http\Request), object(Closure))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php:219">
+                    vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php<span class="text-neutral-500">:219</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Pipeline\\Pipeline-\u003EIlluminate\\Pipeline\\{closure}(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php:74">
+                    vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php<span class="text-neutral-500">:74</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Http\\Middleware\\HandleCors-\u003Ehandle(object(Illuminate\\Http\\Request), object(Closure))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Http\Middleware\HandleCors-&gt;handle(object(Illuminate\Http\Request), object(Closure))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Http\Middleware\HandleCors-&gt;handle(object(Illuminate\Http\Request), object(Closure))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php:219">
+                    vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php<span class="text-neutral-500">:219</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Pipeline\\Pipeline-\u003EIlluminate\\Pipeline\\{closure}(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php:58">
+                    vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php<span class="text-neutral-500">:58</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Http\\Middleware\\TrustProxies-\u003Ehandle(object(Illuminate\\Http\\Request), object(Closure))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Http\Middleware\TrustProxies-&gt;handle(object(Illuminate\Http\Request), object(Closure))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Http\Middleware\TrustProxies-&gt;handle(object(Illuminate\Http\Request), object(Closure))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php:219">
+                    vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php<span class="text-neutral-500">:219</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Pipeline\\Pipeline-\u003EIlluminate\\Pipeline\\{closure}(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php:22">
+                    vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php<span class="text-neutral-500">:22</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks-\u003Ehandle(object(Illuminate\\Http\\Request), object(Closure))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks-&gt;handle(object(Illuminate\Http\Request), object(Closure))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks-&gt;handle(object(Illuminate\Http\Request), object(Closure))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php:219">
+                    vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php<span class="text-neutral-500">:219</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Pipeline\\Pipeline-\u003EIlluminate\\Pipeline\\{closure}(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePathEncoding.php:26">
+                    vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePathEncoding.php<span class="text-neutral-500">:26</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Http\\Middleware\\ValidatePathEncoding-\u003Ehandle(object(Illuminate\\Http\\Request), object(Closure))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Http\Middleware\ValidatePathEncoding-&gt;handle(object(Illuminate\Http\Request), object(Closure))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Http\Middleware\ValidatePathEncoding-&gt;handle(object(Illuminate\Http\Request), object(Closure))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php:219">
+                    vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php<span class="text-neutral-500">:219</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Pipeline\\Pipeline-\u003EIlluminate\\Pipeline\\{closure}(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php:137">
+                    vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php<span class="text-neutral-500">:137</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Pipeline\\Pipeline-\u003Ethen(object(Closure))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Pipeline\Pipeline-&gt;then(object(Closure))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Pipeline\Pipeline-&gt;then(object(Closure))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php:175">
+                    vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php<span class="text-neutral-500">:175</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Foundation\\Http\\Kernel-\u003EsendRequestThroughRouter(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Foundation\Http\Kernel-&gt;sendRequestThroughRouter(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Foundation\Http\Kernel-&gt;sendRequestThroughRouter(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php:144">
+                    vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php<span class="text-neutral-500">:144</span>
+            </span>
+</div>
+</div>
+            </div>
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <div class="flex">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Foundation\\Http\\Kernel-\u003Ehandle(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Foundation\Http\Kernel-&gt;handle(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Foundation\Http\Kernel-&gt;handle(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+        </div>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Foundation\Application.php:1220">
+                    vendor\laravel\framework\src\Illuminate\Foundation\Application.php<span class="text-neutral-500">:1220</span>
+            </span>
+</div>
+</div>
+            </div>
+            </div>
+</div>
+                                                                    <div
+    x-data="{
+        expanded: true,
+        hasCode: true
+    }"
+    class="group rounded-lg border border-neutral-200 dark:border-white/10 overflow-hidden shadow-xs"
+    :class="{ 'dark:border-white/5': expanded }"
+>
+    <div
+        class="flex h-11 items-center gap-3 bg-white pr-2.5 pl-4 overflow-x-auto dark:bg-white/3"
+        :class="{
+            'cursor-pointer hover:bg-white/50 dark:hover:bg-white/5 hover:[&_svg]:stroke-emerald-500': hasCode,
+            'dark:bg-white/5 rounded-t-lg': expanded,
+            'dark:bg-white/3 rounded-lg': !expanded
+        }"
+        @click="hasCode && (expanded = !expanded)"
+    >
+        
+        <div class="flex size-3 items-center justify-center flex-shrink-0">
+          <div
+          class="size-2 rounded-full"
+          :class="{
+            'bg-rose-500 dark:bg-neutral-400': expanded,
+            'bg-rose-200 dark:bg-neutral-700': !expanded
+          }"
+          ></div>
+        </div>
+
+        <div class="flex flex-1 items-center justify-between gap-6 min-w-0">
+            <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            'Illuminate\\Foundation\\Application-\u003EhandleRequest(object(Illuminate\\Http\\Request))',
+            'php',
+            true,
+            false,
+            1,
+            null
+        );
+    "
+    class="text-xs min-w-0" data-tippy-content="Illuminate\Foundation\Application-&gt;handleRequest(object(Illuminate\Http\Request))"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre class="truncate"><code>Illuminate\Foundation\Application-&gt;handleRequest(object(Illuminate\Http\Request))</code></pre></div>
+</div>
+            <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400"
+    dir="rtl"
+>
+    <span data-tippy-content="public\index.php:20">
+                    public\index.php<span class="text-neutral-500">:20</span>
+            </span>
+</div>
+        </div>
+
+        <div class="flex-shrink-0">
+            <button
+                x-cloak
+                type="button"
+                class="flex h-6 w-6 cursor-pointer items-center justify-center rounded-md dark:border dark:border-white/8 group-hover:text-blue-500 group-hover:dark:text-emerald-500"
+                :class="{
+                    'text-blue-500 dark:text-emerald-500 dark:bg-white/5': expanded,
+                    'text-neutral-500 dark:text-neutral-500 dark:bg-white/3': !expanded,
+                }"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none" x-show="expanded">
+  <g clip-path="url(#clip0_14550_6168)">
+    <path d="M6.75 11.0001L4 8.25012L1.25 11.0001" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6.75 1.50012L4 4.25012L1.25 1.50012" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_14550_6168">
+      <rect width="8" height="11" fill="white" style="fill:white;fill-opacity:1;" transform="translate(0 0.500122)"/>
+    </clipPath>
+  </defs>
+</svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" x-show="!expanded">
+  <g clip-path="url(#clip0_14550_6155)">
+    <path d="M8.75 8.25012L6 11.0001L3.25 8.25012" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8.75 3.75012L6 1.00012L3.25 3.75012" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_14550_6155">
+      <rect width="12" height="12" fill="white" style="fill:white;fill-opacity:1;"/>
+    </clipPath>
+  </defs>
+</svg>
+            </button>
+        </div>
+    </div>
+
+            <div
+    class="text-sm rounded-b-lg bg-neutral-50 border-t border-neutral-100 dark:bg-neutral-900 dark:border-white/10"
+    x-show="expanded"
+>
+    <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            '\n\/\/ Bootstrap Laravel and handle the request...\n\/** @var Application $app *\/\n$app = require_once __DIR__.\u0027\/..\/bootstrap\/app.php\u0027;\n\n$app-\u003EhandleRequest(Request::capture());\n',
+            'php',
+            false,
+            true,
+            15,
+            5
+        );
+    "
+    class="overflow-x-auto"
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre><code><span class="block px-4 py-1 h-7 even:bg-white odd:bg-white/2 even:dark:bg-white/2 odd:dark:bg-white/4 "><span class="mr-6 text-neutral-500! dark:text-neutral-600! ">15</span></span><span class="block px-4 py-1 h-7 even:bg-white odd:bg-white/2 even:dark:bg-white/2 odd:dark:bg-white/4 "><span class="mr-6 text-neutral-500! dark:text-neutral-600! ">16</span>// Bootstrap Laravel and handle the request...</span><span class="block px-4 py-1 h-7 even:bg-white odd:bg-white/2 even:dark:bg-white/2 odd:dark:bg-white/4 "><span class="mr-6 text-neutral-500! dark:text-neutral-600! ">17</span>/** @var Application $app */</span><span class="block px-4 py-1 h-7 even:bg-white odd:bg-white/2 even:dark:bg-white/2 odd:dark:bg-white/4 "><span class="mr-6 text-neutral-500! dark:text-neutral-600! ">18</span>$app = require_once __DIR__.&#039;/../bootstrap/app.php&#039;;</span><span class="block px-4 py-1 h-7 even:bg-white odd:bg-white/2 even:dark:bg-white/2 odd:dark:bg-white/4 "><span class="mr-6 text-neutral-500! dark:text-neutral-600! ">19</span></span><span class="block px-4 py-1 h-7 even:bg-white odd:bg-white/2 even:dark:bg-white/2 odd:dark:bg-white/4 bg-rose-200! dark:bg-rose-900!"><span class="mr-6 text-neutral-500! dark:text-neutral-600! dark:text-white!">20</span>$app-&gt;handleRequest(Request::capture());</span><span class="block px-4 py-1 h-7 even:bg-white odd:bg-white/2 even:dark:bg-white/2 odd:dark:bg-white/4 "><span class="mr-6 text-neutral-500! dark:text-neutral-600! ">21</span></span></code></pre></div>
+</div>
+</div>
+    </div>
+                                                                <div
+    x-data="{ expanded: false }"
+    class="group rounded-lg border border-neutral-200 dark:border-white/5"
+    :class="{
+        'bg-white dark:bg-white/5 shadow-xs': expanded,
+        'border-dashed border-neutral-300 bg-neutral-50 opacity-90 dark:border-white/10 dark:bg-white/1': !expanded,
+    }"
+>
+    <div
+        class="flex h-11 cursor-pointer items-center gap-3 rounded-lg pr-2.5 pl-4 hover:bg-white/50 dark:hover:bg-white/2"
+        @click="expanded = !expanded"
+    >
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-neutral-400" x-show="!expanded" x-cloak="x-cloak">
+    <path d="M2.75 2.75H5.614L5.316 2.114C5.069 1.587 4.54 1.25 3.958 1.25H2.25C1.422 1.25 0.75 1.922 0.75 2.75V4.75C0.75 3.645 1.645 2.75 2.75 2.75Z" />
+    <path d="M0.75 4.75V2.75C0.75 1.922 1.422 1.25 2.25 1.25H3.958C4.54 1.25 5.069 1.587 5.316 2.114L5.614 2.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M2.75 2.75H9.25C10.355 2.75 11.25 3.645 11.25 4.75V8.25C11.25 9.355 10.355 10.25 9.25 10.25H2.75C1.645 10.25 0.75 9.355 0.75 8.25V4.75C0.75 3.645 1.645 2.75 2.75 2.75Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-blue-500 dark:text-emerald-500" x-show="expanded">
+    <g clip-path="url(#clip0_14732_6211)">
+        <path d="M1.75 5.25V2.75C1.75 1.922 2.422 1.25 3.25 1.25H4.202C4.808 1.25 5.381 1.525 5.761 1.998L6.364 2.75H8.25C9.355 2.75 10.25 3.645 10.25 4.75V5.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.46801 5.25H9.53101C10.44 5.25 11.14 6.052 11.017 6.953L10.735 9.021C10.6 10.012 9.75301 10.751 8.75301 10.751H3.24601C2.24601 10.751 1.39901 10.012 1.26401 9.021L0.982011 6.953C0.859011 6.052 1.55901 5.25 2.46801 5.25Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <defs>
+        <clipPath id="clip0_14732_6211">
+            <rect width="12" height="12" />
+        </clipPath>
+    </defs>
+</svg>
+
+        <div class="flex-1 font-mono text-xs leading-3 text-neutral-900 dark:text-neutral-400">
+            1 vendor frame
+        </div>
+
+        <button
+            x-cloak
+            type="button"
+            class="flex h-6 w-6 cursor-pointer items-center justify-center rounded-md dark:border dark:border-white/8 group-hover:text-blue-500 group-hover:dark:text-emerald-500"
+            :class="{
+                'text-blue-500 dark:text-emerald-500 dark:bg-white/5': expanded,
+                'text-neutral-500 dark:text-neutral-500 dark:bg-white/3': !expanded,
+            }"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none" x-show="expanded">
+  <g clip-path="url(#clip0_14550_6168)">
+    <path d="M6.75 11.0001L4 8.25012L1.25 11.0001" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6.75 1.50012L4 4.25012L1.25 1.50012" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_14550_6168">
+      <rect width="8" height="11" fill="white" style="fill:white;fill-opacity:1;" transform="translate(0 0.500122)"/>
+    </clipPath>
+  </defs>
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" x-show="!expanded">
+  <g clip-path="url(#clip0_14550_6155)">
+    <path d="M8.75 8.25012L6 11.0001L3.25 8.25012" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8.75 3.75012L6 1.00012L3.25 3.75012" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_14550_6155">
+      <rect width="12" height="12" fill="white" style="fill:white;fill-opacity:1;"/>
+    </clipPath>
+  </defs>
+</svg>
+        </button>
+    </div>
+
+    <div x-cloak class="flex flex-col rounded-b-lg divide-y divide-neutral-200 border-t border-neutral-200 dark:divide-white/5 dark:border-white/5" x-show="expanded">
+                    <div class="flex flex-col divide-y divide-neutral-200 dark:divide-white/5">
+                <div class="grid gap-3 p-4 bg-neutral-50 dark:bg-transparent overflow-x-auto rounded-lg">
+            <span class="font-mono text-xs leading-3 text-neutral-500">Entrypoint</span>
+    
+    <div
+    class="truncate font-mono text-xs text-neutral-500 dark:text-neutral-400 text-xs"
+    dir="ltr"
+>
+    <span data-tippy-content="vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php:23">
+                    vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php<span class="text-neutral-500">:23</span>
+            </span>
+</div>
+</div>
+            </div>
+            </div>
+</div>
+                        </div>
+</div>
+
+        <div
+    class="flex flex-col gap-2.5 bg-neutral-50 dark:bg-white/1 border border-neutral-200 dark:border-neutral-800 rounded-xl p-2.5 shadow-xs"
+    x-data="{
+        totalQueries: 0,
+        currentPage: 1,
+        perPage: 10,
+        get totalPages() {
+            return Math.ceil(this.totalQueries / this.perPage);
+        },
+        get hasPrevious() {
+            return this.currentPage > 1;
+        },
+        get hasNext() {
+            return this.currentPage < this.totalPages;
+        },
+        goToPage(page) {
+            if (page >= 1 && page <= this.totalPages) {
+                this.currentPage = page;
+            }
+        },
+        first() {
+            this.currentPage = 1;
+        },
+        last() {
+            this.currentPage = this.totalPages;
+        },
+        previous() {
+            if (this.hasPrevious) {
+                this.currentPage--;
+            }
+        },
+        next() {
+            if (this.hasNext) {
+                this.currentPage++;
+            }
+        },
+        get visiblePages() {
+            const total = this.totalPages;
+            const current = this.currentPage;
+            const pages = [];
+
+            if (total <= 7) {
+                for (let i = 1; i <= total; i++) {
+                    pages.push({ type: 'page', value: i });
+                }
+            } else {
+                if (current <= 4) {
+                    for (let i = 1; i <= 5; i++) {
+                        pages.push({ type: 'page', value: i });
+                    }
+                    if (total > 6) {
+                        pages.push({ type: 'ellipsis', value: '...', id: 'end' });
+                        pages.push({ type: 'page', value: total });
+                    }
+                } else if (current > total - 4) {
+                    pages.push({ type: 'page', value: 1 });
+                    if (total > 6) {
+                        pages.push({ type: 'ellipsis', value: '...', id: 'start' });
+                    }
+                    for (let i = Math.max(total - 4, 2); i <= total; i++) {
+                        pages.push({ type: 'page', value: i });
+                    }
+                } else {
+                    pages.push({ type: 'page', value: 1 });
+                    pages.push({ type: 'ellipsis', value: '...', id: 'start' });
+                    for (let i = current - 1; i <= current + 1; i++) {
+                        pages.push({ type: 'page', value: i });
+                    }
+                    pages.push({ type: 'ellipsis', value: '...', id: 'end' });
+                    pages.push({ type: 'page', value: total });
+                }
+            }
+            return pages;
+        }
+    }"
+>
+    <div class="flex items-center justify-between p-2">
+        <div class="flex items-center gap-2.5">
+            <div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-white/5 rounded-md w-6 h-6 flex items-center justify-center p-1">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5 text-blue-500 dark:text-emerald-500">
+    <path d="M9.75 2.56944C9.75 3.29815 8.07107 3.88889 6 3.88889C3.92893 3.88889 2.25 3.29815 2.25 2.56944M9.75 2.56944C9.75 1.84074 8.07107 1.25 6 1.25C3.92893 1.25 2.25 1.84074 2.25 2.56944M9.75 2.56944V9.43056C9.75 10.1593 8.07107 10.75 6 10.75C3.92893 10.75 2.25 10.1593 2.25 9.43056V2.56944M9.75 5.94434C9.75 6.67304 8.07107 7.26378 6 7.26378C3.92893 7.26378 2.25 6.67304 2.25 5.94434" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </div>
+            <h3 class="text-base font-semibold">Queries</h3>
+        </div>
+        <div x-show="totalQueries > 0" class="text-sm text-neutral-500 dark:text-neutral-400 flex items-center gap-2">
+            <span x-text="`${((currentPage - 1) * perPage) + 1}-${Math.min(currentPage * perPage, totalQueries)} of ${totalQueries}`"></span>
+                    </div>
+    </div>
+
+    <div class="flex flex-col gap-1">
+                <div class="bg-white/[2%] border border-neutral-200 dark:border-neutral-800 rounded-md w-full p-5 uppercase text-sm text-center font-mono shadow-xs text-neutral-600 dark:text-neutral-400">
+    <span class="text-neutral-400 dark:text-neutral-600">// </span>No queries executed
+</div>
+            </div>
+
+    <!-- Pagination Controls -->
+    <div x-cloak x-show="totalPages > 1" class="flex items-center justify-center gap-1 py-4 font-mono">
+        <!-- First Button -->
+        <button
+            @click="first()"
+            class="cursor-pointer flex items-center justify-center w-8 h-8 rounded-md transition-colors"
+            :disabled="!hasPrevious"
+            :class="hasPrevious ? 'text-neutral-500 dark:text-neutral-300 hover:bg-neutral-200 hover:dark:text-white hover:dark:bg-white/5' : 'text-neutral-600 cursor-not-allowed!'"
+        >
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-3 h-3">
+    <path d="M4.75 1L0.75 5L4.75 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M9.25 1L5.25 5L9.25 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </button>
+
+        <!-- Previous Button -->
+        <button
+            @click="previous()"
+            class="cursor-pointer flex items-center justify-center w-8 h-8 rounded-md transition-colors"
+            :class="hasPrevious ? 'text-neutral-500 dark:text-neutral-300 hover:bg-neutral-200 hover:dark:text-white hover:dark:bg-white/5' : 'text-neutral-600 cursor-not-allowed!'"
+            :disabled="!hasPrevious"
+        >
+            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-3 h-3">
+    <path d="M5.125 0.75L0.875 5L5.125 9.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </button>
+
+        <!-- Page Numbers -->
+        <template x-for="(page, index) in visiblePages" :key="`page-${page.type}-${page.value}-${page.id || index}`">
+            <div>
+                <template x-if="page.type === 'ellipsis'">
+                    <span class="flex items-center justify-center w-8 h-8 text-neutral-500">...</span>
+                </template>
+                <template x-if="page.type === 'page'">
+                    <button
+                        @click="goToPage(page.value)"
+                        class="cursor-pointer flex items-center justify-center w-8 h-8 rounded-md text-sm font-medium transition-colors"
+                        :class="currentPage === page.value ? 'bg-blue-600 text-white' : 'text-neutral-500 dark:text-neutral-300 hover:bg-neutral-200 hover:dark:text-white hover:dark:bg-white/5'"
+                        x-text="page.value"
+                    ></button>
+                </template>
+            </div>
+        </template>
+
+        <!-- Next Button -->
+        <button
+            @click="next()"
+            class="cursor-pointer flex items-center justify-center w-8 h-8 rounded-md transition-colors"
+            :class="hasNext ? 'text-neutral-500 dark:text-neutral-300 hover:bg-neutral-200 hover:dark:text-white hover:dark:bg-white/5' : 'text-neutral-600 cursor-not-allowed!'"
+            :disabled="!hasNext"
+        >
+            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-3 h-3">
+    <path d="M0.875 9.25L5.125 5L0.875 0.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </button>
+
+        <!-- Last Button -->
+        <button
+            @click="last()"
+            class="cursor-pointer flex items-center justify-center w-8 h-8 rounded-md transition-colors"
+            :class="hasNext ? 'text-neutral-500 dark:text-neutral-300 hover:bg-neutral-200 hover:dark:text-white hover:dark:bg-white/5' : 'text-neutral-600 cursor-not-allowed!'"
+            :disabled="!hasNext"
+        >
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-3 h-3">
+    <path d="M5.25 9L9.25 5L5.25 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M0.75 9L4.75 5L0.75 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </button>
+    </div>
+</div>
+</section>
+
+    <div class="h-0 w-full relative">
+    <div class="absolute top-[-1px] left-0 right-0 bottom-0 border-t border-dashed border-neutral-300 dark:border-white/[9%]"></div>
+</div>
+
+    <section
+    class="w-full max-w-7xl mx-auto p-4 sm:p-14 border-x border-dashed border-neutral-300 dark:border-white/[9%] flex flex-col gap-12"
+>
+    <div class="flex flex-col gap-3">
+    <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">Headers</h2>
+    <div class="flex flex-col">
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">host</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="127.0.0.1:8000">
+                    127.0.0.1:8000
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">connection</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="keep-alive">
+                    keep-alive
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">content-length</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="18194">
+                    18194
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">sec-ch-ua-platform</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="&quot;Windows&quot;">
+                    &quot;Windows&quot;
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">user-agent</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36">
+                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">sec-ch-ua</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="&quot;Chromium&quot;;v=&quot;148&quot;, &quot;Google Chrome&quot;;v=&quot;148&quot;, &quot;Not/A)Brand&quot;;v=&quot;99&quot;">
+                    &quot;Chromium&quot;;v=&quot;148&quot;, &quot;Google Chrome&quot;;v=&quot;148&quot;, &quot;Not/A)Brand&quot;;v=&quot;99&quot;
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">content-type</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="multipart/form-data; boundary=----WebKitFormBoundaryATBv59MqccR21fA4">
+                    multipart/form-data; boundary=----WebKitFormBoundaryATBv59MqccR21fA4
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">sec-ch-ua-mobile</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="?0">
+                    ?0
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">accept</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="*/*">
+                    */*
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">origin</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="http://localhost:8001">
+                    http://localhost:8001
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">sec-fetch-site</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="cross-site">
+                    cross-site
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">sec-fetch-mode</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="cors">
+                    cors
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">sec-fetch-dest</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="empty">
+                    empty
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">referer</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="http://localhost:8001/">
+                    http://localhost:8001/
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">accept-encoding</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="gzip, deflate, br, zstd">
+                    gzip, deflate, br, zstd
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">accept-language</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="zh-CN,zh;q=0.9">
+                    zh-CN,zh;q=0.9
+                </span>
+            </div>
+        </div>
+            </div>
+</div>
+
+        <div class="flex flex-col gap-3">
+    <h2 class="text-lg font-semibold">Body</h2>
+        <div class="bg-white dark:bg-white/[2%] border border-neutral-200 dark:border-neutral-800 rounded-md overflow-x-auto p-5 text-sm font-mono shadow-xs">
+        <div
+    x-data="{ highlightedCode: null }"
+    x-init="
+        highlightedCode = window.highlight(
+            '{\n    \u0022avatar\u0022: {}\n}',
+            'json',
+            false,
+            false,
+            1,
+            null
+        );
+    "
+    
+>
+    <div
+        x-cloak
+        x-html="highlightedCode"
+    ></div>
+    <div x-show="!highlightedCode"><pre><code>{
+    &quot;avatar&quot;: {}
+}</code></pre></div>
+</div>
+    </div>
+    </div>
+
+        <div class="flex flex-col gap-3">
+    <h2 class="text-lg font-semibold">Routing</h2>
+    <div class="flex flex-col">
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">controller</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="App\Http\Controllers\Api\UserController@uploadAvatar">
+                    App\Http\Controllers\Api\UserController@uploadAvatar
+                </span>
+            </div>
+        </div>
+                <div class="flex max-w-full items-baseline gap-2 h-10 text-sm font-mono">
+            <div class="uppercase text-neutral-500 dark:text-neutral-400 shrink-0">middleware</div>
+            <div class="min-w-6 grow h-3 border-b-2 border-dotted border-neutral-300 dark:border-white/20"></div>
+            <div class="truncate text-neutral-900 dark:text-white">
+                <span data-tippy-content="api, auth:sanctum">
+                    api, auth:sanctum
+                </span>
+            </div>
+        </div>
+            </div>
+</div>
+
+        <div class="flex flex-col gap-3">
+    <h2 class="text-lg font-semibold">Routing parameters</h2>
+        <div class="bg-white/[2%] border border-neutral-200 dark:border-neutral-800 rounded-md w-full p-5 uppercase text-sm text-center font-mono shadow-xs text-neutral-600 dark:text-neutral-400">
+    <span class="text-neutral-400 dark:text-neutral-600">// </span>No routing parameters
+</div>
+    </div>
+</section>
+
+    <div class="h-0 w-full relative">
+    <div class="absolute top-[-1px] left-0 right-0 bottom-0 border-t border-dashed border-neutral-300 dark:border-white/[9%]"></div>
+</div>
+
+            <section
+    class="w-full max-w-7xl mx-auto p-4 sm:p-14 border-x border-dashed border-neutral-300 dark:border-white/[9%] pb-0 sm:pb-0"
+>
+    <div
+    class="relative text-neutral-400 dark:text-neutral-400"
+    x-data="{ spotlight: { x: 0, y: 0 } }"
+    @mousemove="const rect = $el.getBoundingClientRect(); spotlight = { x: $event.clientX - rect.left, y: $event.clientY - rect.top }">
+    <div
+        class="absolute w-full text-neutral-800 dark:text-neutral-100"
+        x-data="{ isDark: window.matchMedia('(prefers-color-scheme: dark)').matches || document.documentElement.classList.contains('dark') }"
+        :style="
+            'mask-image: radial-gradient(circle at ' +
+                spotlight.x +
+                'px ' +
+                spotlight.y +
+                'px, black 0%, transparent ' + (isDark ? '150px' : '120px') + '); -webkit-mask-image: radial-gradient(circle at ' +
+                spotlight.x +
+                'px ' +
+                spotlight.y +
+                'px, black 0%, transparent ' + (isDark ? '600px' : '400px') + ');'
+        ">
+        <svg fill="currentColor" viewBox="0 0 1268 308" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<path id="a" d="m0 0v-0.49449h1.7215v-4.3497l-1.6849-0.00916v-0.40291c1.3278 0 1.6849-0.22893 1.8131-1.1538h0.43954v5.9155h1.7399v0.49449h-4.0292z"/>
+<path id="b" d="m0 0c-1.3186 0-2.1062-1.227-2.1062-3.2965 0-2.0696 0.78752-3.2966 2.1062-3.2966s2.1062 1.227 2.1062 3.2966c0 2.0695-0.78752 3.2965-2.1062 3.2965zm0-3.8918c0.3205 0 0.56774 0.2473 0.56774 0.5678 0 0.3113-0.24724 0.5677-0.56774 0.5677-0.31134 0-0.56775-0.2564-0.56775-0.5677 0-0.3205 0.25641-0.5678 0.56775-0.5678zm0 3.3973c0.99813 0 1.5567-1.0164 1.5567-2.802 0-1.7857-0.55859-2.8021-1.5567-2.8021s-1.5567 1.0164-1.5567 2.8021c0 1.7856 0.55859 2.802 1.5567 2.802z"/>
+</defs>
+</svg>
+<script>
+(()=>{
+const d="10A212.9A|AB2AB2AB2A212.2AB2AB2AB|6AB3A212.4AB4A|2ABAB3ABA212.AB4AB2A|10A212.3AB4AB|AB2ABAB3A212.AB3AB3A|8ABA212.7ABA|ABAB2AB3A212.2ABAB4A|10A212.6AB2A|2AB2ABAB2A32.9A61.9A73.9A19.AB2AB4A|9AB28.5AB2AB2AB4A3.10A6.25A10.5AB2AB2AB4A4.9A4.9A20.11A9.5AB2AB2AB5A15.7ABA|ABABAB4A25.4ABAB9AB4A.2AB3AB2AB6.2AB2AB2ABAB2AB2ABAB2AB3A7.4ABAB9AB5A.2AB2AB2AB4.2AB2AB2ABA18.2AB2AB2AB2A7.4AB11AB2AB3A12.ABABAB3A|7AB2A23.3AB7ABABABAB3AB8AB3A6.4AB10AB7ABA5.3AB7ABABAB4AB2AB5AB4A5.5AB4A17.7AB2A6.3AB4ABABABABAB10A10.8AB|2AB2AB3AB21.3AB3AB2AB14ABABAB4ABA6.AB4AB2ABABAB4ABAB4A3.3AB3AB2AB8AB7ABAB3AB2A6.AB5ABA16.2ABABAB3A6.2AB3AB13AB2ABAB4A8.2AB3AB2A|10A20.2AB10AB7.ABAB7AB4A6.3AB12AB5AB2A2.2AB10AB7.2ABAB10AB6.3AB6A14.11A4.10AB11.7AB3A7.4AB4A|ABAB2ABABA19.6ABABAB14.3AB2AB3AB2A6.AB3ABAB2A16.6ABABAB14.3AB2ABAB4A7.4ABAB3A13.ABAB2AB2AB4.2ABABABABA15.AB2AB2AB2A6.AB5ABA|10A19.AB2AB5A16.12A6.9AB15.2AB2AB5A16.9AB2A8.AB5AB2A11.10A4.10A17.10A5.3AB2AB2A|2ABABAB3A18.4AB3ABA18.AB2ABAB2ABA6.2ABAB2AB2A15.4AB3ABA18.ABAB2AB3AB8.4AB5A10.2AB2ABABABA4.ABAB2AB3A18.AB2ABAB2A5.AB7A|8ABA17.2AB4AB3A19.10A6.10A15.AB4AB2A20.10A9.AB3AB2ABA9.10A4.9AB27AB5.4AB2ABA|AB2AB5A17.4AB5A20.AB2ABABABA6.AB2ABAB2AB14.4AB5A20.2AB2ABAB2A10.10A7.2ABAB2AB2A5.AB2ABAB4AB2AB2AB2ABAB2ABABABABAB5A4.2AB6A|6ABABA17.AB4AB2AB20.10A6.10A14.2AB4AB2A21.8AB11.ABABAB2AB6.11A5.8AB7AB18AB3A4.4ABAB2A|ABAB6A17.3AB6A20.2ABAB2AB2A6.ABAB2ABABA14.5AB4A20.2ABAB2AB2A11.10A4.2ABAB2ABABA6.2AB2AB4ABABAB3AB2ABAB2AB2AB2AB4ABA4.AB6AB|5AB2ABA18.4AB2AB2A19.10A6.10A15.AB4AB2A20.10A12.2AB2AB2ABA3.10A7.7AB2A33.3AB2AB2A|2AB7A18.AB8A18.2AB2ABABABA6.2AB2AB2ABA15.3AB4ABA18.2AB2ABAB2AB12.11A.2AB2ABAB2A9.ABAB6A32.AB7A|4ABAB3A19.2ABABAB4A15.2AB9A6.10A15.5AB6A15.2AB9A13.ABABAB2AB5AB5AB9.5ABAB3A17.4A10.4AB2ABA|AB6ABA19.8AB4A11.2AB3AB2AB3AB6.ABABABAB2A16.AB4AB2AB3A10.3AB4AB2ABABA14.9ABAB4AB2A11.2AB5AB2A14.3AB5A7.2AB6A|3AB2AB20A3.2AB2AB3AB7A.16AB2A6.10A17.2AB7AB5A2.10AB8A14.3ABAB8AB3A13.4AB8A8.4AB3AB5A5.5ABABA|AB7AB2ABAB2AB2ABAB2ABA5.8ABAB2AB3AB2ABAB2AB2ABAB4A6.2AB2AB2ABA19.2ABAB5AB2AB3AB2ABAB5ABAB2ABA15.6ABAB2AB5A15.4AB2ABAB10AB8ABA7.ABAB5A|4AB2AB11AB7A6.2ABAB9AB11AB5ABA6.10A20.5ABAB15ABAB8A16.AB11ABA17.AB8AB2AB2AB4ABABAB2A9.6AB2A|2AB6ABAB2ABAB5ABAB2A9.8AB2ABABABABA2.5ABAB2A6.ABAB2ABABA22.8AB2ABABABAB3A2.4ABAB2A16.3ABAB2AB2AB2A20.2ABAB8AB2AB7A11.2AB5AB|5ABAB10AB8A12.7AB6A4.AB5AB2A6.10A26.AB12A5.2AB6A17.9AB3A24.2AB2ABAB6ABA15.4ABAB2A",
+s=document.currentScript.previousElementSibling,
+ns="http://www.w3.org/2000/svg";
+const ox=0.32415,oy=7.3223,cw=5.4907,rh=10.0,zx=1.923,zy=0.0915;
+d.split("|").forEach((r,ri)=>{const g=document.createElementNS(ns,"g");g.setAttribute("transform","translate(0,"+(oy+ri*rh)+")");let col=0;for(let i=0;i<r.length;i++){let c=r[i],n=1;if(c>="0"&&c<="9"){n=c;while(i+1<r.length&&r[i+1]>="0"&&r[i+1]<="9")n+=r[++i];n=+n;c=r[++i];}if(c==="."){col+=n;continue;}for(let j=0;j<n;j++){const u=document.createElementNS(ns,"use");u.setAttribute("href",c==="A"?"#a":"#b");u.setAttribute("x",ox+col*cw+(c==="B"?zx:0));if(c==="B")u.setAttribute("y",zy);g.appendChild(u);col++;}}s.appendChild(g);});
+})();
+</script>    </div>
+    <svg fill="currentColor" viewBox="0 0 1268 308" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<path id="a" d="m0 0v-0.49449h1.7215v-4.3497l-1.6849-0.00916v-0.40291c1.3278 0 1.6849-0.22893 1.8131-1.1538h0.43954v5.9155h1.7399v0.49449h-4.0292z"/>
+<path id="b" d="m0 0c-1.3186 0-2.1062-1.227-2.1062-3.2965 0-2.0696 0.78752-3.2966 2.1062-3.2966s2.1062 1.227 2.1062 3.2966c0 2.0695-0.78752 3.2965-2.1062 3.2965zm0-3.8918c0.3205 0 0.56774 0.2473 0.56774 0.5678 0 0.3113-0.24724 0.5677-0.56774 0.5677-0.31134 0-0.56775-0.2564-0.56775-0.5677 0-0.3205 0.25641-0.5678 0.56775-0.5678zm0 3.3973c0.99813 0 1.5567-1.0164 1.5567-2.802 0-1.7857-0.55859-2.8021-1.5567-2.8021s-1.5567 1.0164-1.5567 2.8021c0 1.7856 0.55859 2.802 1.5567 2.802z"/>
+</defs>
+</svg>
+<script>
+(()=>{
+const d="10A212.9A|AB2AB2AB2A212.2AB2AB2AB|6AB3A212.4AB4A|2ABAB3ABA212.AB4AB2A|10A212.3AB4AB|AB2ABAB3A212.AB3AB3A|8ABA212.7ABA|ABAB2AB3A212.2ABAB4A|10A212.6AB2A|2AB2ABAB2A32.9A61.9A73.9A19.AB2AB4A|9AB28.5AB2AB2AB4A3.10A6.25A10.5AB2AB2AB4A4.9A4.9A20.11A9.5AB2AB2AB5A15.7ABA|ABABAB4A25.4ABAB9AB4A.2AB3AB2AB6.2AB2AB2ABAB2AB2ABAB2AB3A7.4ABAB9AB5A.2AB2AB2AB4.2AB2AB2ABA18.2AB2AB2AB2A7.4AB11AB2AB3A12.ABABAB3A|7AB2A23.3AB7ABABABAB3AB8AB3A6.4AB10AB7ABA5.3AB7ABABAB4AB2AB5AB4A5.5AB4A17.7AB2A6.3AB4ABABABABAB10A10.8AB|2AB2AB3AB21.3AB3AB2AB14ABABAB4ABA6.AB4AB2ABABAB4ABAB4A3.3AB3AB2AB8AB7ABAB3AB2A6.AB5ABA16.2ABABAB3A6.2AB3AB13AB2ABAB4A8.2AB3AB2A|10A20.2AB10AB7.ABAB7AB4A6.3AB12AB5AB2A2.2AB10AB7.2ABAB10AB6.3AB6A14.11A4.10AB11.7AB3A7.4AB4A|ABAB2ABABA19.6ABABAB14.3AB2AB3AB2A6.AB3ABAB2A16.6ABABAB14.3AB2ABAB4A7.4ABAB3A13.ABAB2AB2AB4.2ABABABABA15.AB2AB2AB2A6.AB5ABA|10A19.AB2AB5A16.12A6.9AB15.2AB2AB5A16.9AB2A8.AB5AB2A11.10A4.10A17.10A5.3AB2AB2A|2ABABAB3A18.4AB3ABA18.AB2ABAB2ABA6.2ABAB2AB2A15.4AB3ABA18.ABAB2AB3AB8.4AB5A10.2AB2ABABABA4.ABAB2AB3A18.AB2ABAB2A5.AB7A|8ABA17.2AB4AB3A19.10A6.10A15.AB4AB2A20.10A9.AB3AB2ABA9.10A4.9AB27AB5.4AB2ABA|AB2AB5A17.4AB5A20.AB2ABABABA6.AB2ABAB2AB14.4AB5A20.2AB2ABAB2A10.10A7.2ABAB2AB2A5.AB2ABAB4AB2AB2AB2ABAB2ABABABABAB5A4.2AB6A|6ABABA17.AB4AB2AB20.10A6.10A14.2AB4AB2A21.8AB11.ABABAB2AB6.11A5.8AB7AB18AB3A4.4ABAB2A|ABAB6A17.3AB6A20.2ABAB2AB2A6.ABAB2ABABA14.5AB4A20.2ABAB2AB2A11.10A4.2ABAB2ABABA6.2AB2AB4ABABAB3AB2ABAB2AB2AB2AB4ABA4.AB6AB|5AB2ABA18.4AB2AB2A19.10A6.10A15.AB4AB2A20.10A12.2AB2AB2ABA3.10A7.7AB2A33.3AB2AB2A|2AB7A18.AB8A18.2AB2ABABABA6.2AB2AB2ABA15.3AB4ABA18.2AB2ABAB2AB12.11A.2AB2ABAB2A9.ABAB6A32.AB7A|4ABAB3A19.2ABABAB4A15.2AB9A6.10A15.5AB6A15.2AB9A13.ABABAB2AB5AB5AB9.5ABAB3A17.4A10.4AB2ABA|AB6ABA19.8AB4A11.2AB3AB2AB3AB6.ABABABAB2A16.AB4AB2AB3A10.3AB4AB2ABABA14.9ABAB4AB2A11.2AB5AB2A14.3AB5A7.2AB6A|3AB2AB20A3.2AB2AB3AB7A.16AB2A6.10A17.2AB7AB5A2.10AB8A14.3ABAB8AB3A13.4AB8A8.4AB3AB5A5.5ABABA|AB7AB2ABAB2AB2ABAB2ABA5.8ABAB2AB3AB2ABAB2AB2ABAB4A6.2AB2AB2ABA19.2ABAB5AB2AB3AB2ABAB5ABAB2ABA15.6ABAB2AB5A15.4AB2ABAB10AB8ABA7.ABAB5A|4AB2AB11AB7A6.2ABAB9AB11AB5ABA6.10A20.5ABAB15ABAB8A16.AB11ABA17.AB8AB2AB2AB4ABABAB2A9.6AB2A|2AB6ABAB2ABAB5ABAB2A9.8AB2ABABABABA2.5ABAB2A6.ABAB2ABABA22.8AB2ABABABAB3A2.4ABAB2A16.3ABAB2AB2AB2A20.2ABAB8AB2AB7A11.2AB5AB|5ABAB10AB8A12.7AB6A4.AB5AB2A6.10A26.AB12A5.2AB6A17.9AB3A24.2AB2ABAB6ABA15.4ABAB2A",
+s=document.currentScript.previousElementSibling,
+ns="http://www.w3.org/2000/svg";
+const ox=0.32415,oy=7.3223,cw=5.4907,rh=10.0,zx=1.923,zy=0.0915;
+d.split("|").forEach((r,ri)=>{const g=document.createElementNS(ns,"g");g.setAttribute("transform","translate(0,"+(oy+ri*rh)+")");let col=0;for(let i=0;i<r.length;i++){let c=r[i],n=1;if(c>="0"&&c<="9"){n=c;while(i+1<r.length&&r[i+1]>="0"&&r[i+1]<="9")n+=r[++i];n=+n;c=r[++i];}if(c==="."){col+=n;continue;}for(let j=0;j<n;j++){const u=document.createElementNS(ns,"use");u.setAttribute("href",c==="A"?"#a":"#b");u.setAttribute("x",ox+col*cw+(c==="B"?zx:0));if(c==="B")u.setAttribute("y",zy);g.appendChild(u);col++;}}s.appendChild(g);});
+})();
+</script></div>
+</section>
+    </div>
+
+    <script>var cr=!1,lr=!1,ot=[],ur=-1;function Vl(e){Zl(e)}function Zl(e){ot.includes(e)||ot.push(e),Xl()}function Yl(e){let t=ot.indexOf(e);t!==-1&&t>ur&&ot.splice(t,1)}function Xl(){!lr&&!cr&&(cr=!0,queueMicrotask(Kl))}function Kl(){cr=!1,lr=!0;for(let e=0;e<ot.length;e++)ot[e](),ur=e;ot.length=0,ur=-1,lr=!1}var Pt,gt,Dt,ao,pr=!0;function Ql(e){pr=!1,e(),pr=!0}function Jl(e){Pt=e.reactive,Dt=e.release,gt=t=>e.effect(t,{scheduler:n=>{pr?Vl(n):n()}}),ao=e.raw}function Pi(e){gt=e}function eu(e){let t=()=>{};return[a=>{let r=gt(a);return e._x_effects||(e._x_effects=new Set,e._x_runEffects=()=>{e._x_effects.forEach(i=>i())}),e._x_effects.add(r),t=()=>{r!==void 0&&(e._x_effects.delete(r),Dt(r))},r},()=>{t()}]}function ro(e,t){let n=!0,a,r=gt(()=>{let i=e();JSON.stringify(i),n?a=i:queueMicrotask(()=>{t(i,a),a=i}),n=!1});return()=>Dt(r)}var io=[],so=[],oo=[];function tu(e){oo.push(e)}function Vr(e,t){typeof t=="function"?(e._x_cleanups||(e._x_cleanups=[]),e._x_cleanups.push(t)):(t=e,so.push(t))}function co(e){io.push(e)}function lo(e,t,n){e._x_attributeCleanups||(e._x_attributeCleanups={}),e._x_attributeCleanups[t]||(e._x_attributeCleanups[t]=[]),e._x_attributeCleanups[t].push(n)}function uo(e,t){e._x_attributeCleanups&&Object.entries(e._x_attributeCleanups).forEach(([n,a])=>{(t===void 0||t.includes(n))&&(a.forEach(r=>r()),delete e._x_attributeCleanups[n])})}function nu(e){for(e._x_effects?.forEach(Yl);e._x_cleanups?.length;)e._x_cleanups.pop()()}var Zr=new MutationObserver(Qr),Yr=!1;function Xr(){Zr.observe(document,{subtree:!0,childList:!0,attributes:!0,attributeOldValue:!0}),Yr=!0}function po(){au(),Zr.disconnect(),Yr=!1}var Kt=[];function au(){let e=Zr.takeRecords();Kt.push(()=>e.length>0&&Qr(e));let t=Kt.length;queueMicrotask(()=>{if(Kt.length===t)for(;Kt.length>0;)Kt.shift()()})}function z(e){if(!Yr)return e();po();let t=e();return Xr(),t}var Kr=!1,ia=[];function ru(){Kr=!0}function iu(){Kr=!1,Qr(ia),ia=[]}function Qr(e){if(Kr){ia=ia.concat(e);return}let t=[],n=new Set,a=new Map,r=new Map;for(let i=0;i<e.length;i++)if(!e[i].target._x_ignoreMutationObserver&&(e[i].type==="childList"&&(e[i].removedNodes.forEach(s=>{s.nodeType===1&&s._x_marker&&n.add(s)}),e[i].addedNodes.forEach(s=>{if(s.nodeType===1){if(n.has(s)){n.delete(s);return}s._x_marker||t.push(s)}})),e[i].type==="attributes")){let s=e[i].target,o=e[i].attributeName,c=e[i].oldValue,l=()=>{a.has(s)||a.set(s,[]),a.get(s).push({name:o,value:s.getAttribute(o)})},u=()=>{r.has(s)||r.set(s,[]),r.get(s).push(o)};s.hasAttribute(o)&&c===null?l():s.hasAttribute(o)?(u(),l()):u()}r.forEach((i,s)=>{uo(s,i)}),a.forEach((i,s)=>{io.forEach(o=>o(s,i))});for(let i of n)t.some(s=>s.contains(i))||so.forEach(s=>s(i));for(let i of t)i.isConnected&&oo.forEach(s=>s(i));t=null,n=null,a=null,r=null}function mo(e){return wn(At(e))}function vn(e,t,n){return e._x_dataStack=[t,...At(n||e)],()=>{e._x_dataStack=e._x_dataStack.filter(a=>a!==t)}}function At(e){return e._x_dataStack?e._x_dataStack:typeof ShadowRoot=="function"&&e instanceof ShadowRoot?At(e.host):e.parentNode?At(e.parentNode):[]}function wn(e){return new Proxy({objects:e},su)}var su={ownKeys({objects:e}){return Array.from(new Set(e.flatMap(t=>Object.keys(t))))},has({objects:e},t){return t==Symbol.unscopables?!1:e.some(n=>Object.prototype.hasOwnProperty.call(n,t)||Reflect.has(n,t))},get({objects:e},t,n){return t=="toJSON"?ou:Reflect.get(e.find(a=>Reflect.has(a,t))||{},t,n)},set({objects:e},t,n,a){const r=e.find(s=>Object.prototype.hasOwnProperty.call(s,t))||e[e.length-1],i=Object.getOwnPropertyDescriptor(r,t);return i?.set&&i?.get?i.set.call(a,n)||!0:Reflect.set(r,t,n)}};function ou(){return Reflect.ownKeys(this).reduce((t,n)=>(t[n]=Reflect.get(this,n),t),{})}function ho(e){let t=a=>typeof a=="object"&&!Array.isArray(a)&&a!==null,n=(a,r="")=>{Object.entries(Object.getOwnPropertyDescriptors(a)).forEach(([i,{value:s,enumerable:o}])=>{if(o===!1||s===void 0||typeof s=="object"&&s!==null&&s.__v_skip)return;let c=r===""?i:`${r}.${i}`;typeof s=="object"&&s!==null&&s._x_interceptor?a[i]=s.initialize(e,c,i):t(s)&&s!==a&&!(s instanceof Element)&&n(s,c)})};return n(e)}function go(e,t=()=>{}){let n={initialValue:void 0,_x_interceptor:!0,initialize(a,r,i){return e(this.initialValue,()=>cu(a,r),s=>dr(a,r,s),r,i)}};return t(n),a=>{if(typeof a=="object"&&a!==null&&a._x_interceptor){let r=n.initialize.bind(n);n.initialize=(i,s,o)=>{let c=a.initialize(i,s,o);return n.initialValue=c,r(i,s,o)}}else n.initialValue=a;return n}}function cu(e,t){return t.split(".").reduce((n,a)=>n[a],e)}function dr(e,t,n){if(typeof t=="string"&&(t=t.split(".")),t.length===1)e[t[0]]=n;else{if(t.length===0)throw error;return e[t[0]]||(e[t[0]]={}),dr(e[t[0]],t.slice(1),n)}}var fo={};function ve(e,t){fo[e]=t}function mr(e,t){let n=lu(t);return Object.entries(fo).forEach(([a,r])=>{Object.defineProperty(e,`$${a}`,{get(){return r(t,n)},enumerable:!1})}),e}function lu(e){let[t,n]=xo(e),a={interceptor:go,...t};return Vr(e,n),a}function uu(e,t,n,...a){try{return n(...a)}catch(r){dn(r,e,t)}}function dn(e,t,n=void 0){e=Object.assign(e??{message:"No error message given."},{el:t,expression:n}),console.warn(`Alpine Expression Error: ${e.message}
+
+${n?'Expression: "'+n+`"
+
+`:""}`,t),setTimeout(()=>{throw e},0)}var Jn=!0;function bo(e){let t=Jn;Jn=!1;let n=e();return Jn=t,n}function ct(e,t,n={}){let a;return ne(e,t)(r=>a=r,n),a}function ne(...e){return _o(...e)}var _o=yo;function pu(e){_o=e}function yo(e,t){let n={};mr(n,e);let a=[n,...At(e)],r=typeof t=="function"?du(a,t):hu(a,t,e);return uu.bind(null,e,t,r)}function du(e,t){return(n=()=>{},{scope:a={},params:r=[]}={})=>{let i=t.apply(wn([a,...e]),r);sa(n,i)}}var Ma={};function mu(e,t){if(Ma[e])return Ma[e];let n=Object.getPrototypeOf(async function(){}).constructor,a=/^[\n\s]*if.*\(.*\)/.test(e.trim())||/^(let|const)\s/.test(e.trim())?`(async()=>{ ${e} })()`:e,i=(()=>{try{let s=new n(["__self","scope"],`with (scope) { __self.result = ${a} }; __self.finished = true; return __self.result;`);return Object.defineProperty(s,"name",{value:`[Alpine] ${e}`}),s}catch(s){return dn(s,t,e),Promise.resolve()}})();return Ma[e]=i,i}function hu(e,t,n){let a=mu(t,n);return(r=()=>{},{scope:i={},params:s=[]}={})=>{a.result=void 0,a.finished=!1;let o=wn([i,...e]);if(typeof a=="function"){let c=a(a,o).catch(l=>dn(l,n,t));a.finished?(sa(r,a.result,o,s,n),a.result=void 0):c.then(l=>{sa(r,l,o,s,n)}).catch(l=>dn(l,n,t)).finally(()=>a.result=void 0)}}}function sa(e,t,n,a,r){if(Jn&&typeof t=="function"){let i=t.apply(n,a);i instanceof Promise?i.then(s=>sa(e,s,n,a)).catch(s=>dn(s,r,t)):e(i)}else typeof t=="object"&&t instanceof Promise?t.then(i=>e(i)):e(t)}var Jr="x-";function Mt(e=""){return Jr+e}function gu(e){Jr=e}var oa={};function W(e,t){return oa[e]=t,{before(n){if(!oa[n]){console.warn(String.raw`Cannot find directive \`${n}\`. \`${e}\` will use the default order of execution`);return}const a=rt.indexOf(n);rt.splice(a>=0?a:rt.indexOf("DEFAULT"),0,e)}}}function fu(e){return Object.keys(oa).includes(e)}function ei(e,t,n){if(t=Array.from(t),e._x_virtualDirectives){let i=Object.entries(e._x_virtualDirectives).map(([o,c])=>({name:o,value:c})),s=vo(i);i=i.map(o=>s.find(c=>c.name===o.name)?{name:`x-bind:${o.name}`,value:`"${o.value}"`}:o),t=t.concat(i)}let a={};return t.map(Eo((i,s)=>a[i]=s)).filter($o).map(yu(a,n)).sort(vu).map(i=>_u(e,i))}function vo(e){return Array.from(e).map(Eo()).filter(t=>!$o(t))}var hr=!1,nn=new Map,wo=Symbol();function bu(e){hr=!0;let t=Symbol();wo=t,nn.set(t,[]);let n=()=>{for(;nn.get(t).length;)nn.get(t).shift()();nn.delete(t)},a=()=>{hr=!1,n()};e(n),a()}function xo(e){let t=[],n=o=>t.push(o),[a,r]=eu(e);return t.push(r),[{Alpine:xn,effect:a,cleanup:n,evaluateLater:ne.bind(ne,e),evaluate:ct.bind(ct,e)},()=>t.forEach(o=>o())]}function _u(e,t){let n=()=>{},a=oa[t.type]||n,[r,i]=xo(e);lo(e,t.original,i);let s=()=>{e._x_ignore||e._x_ignoreSelf||(a.inline&&a.inline(e,t,r),a=a.bind(a,e,t,r),hr?nn.get(wo).push(a):a())};return s.runCleanups=i,s}var ko=(e,t)=>({name:n,value:a})=>(n.startsWith(e)&&(n=n.replace(e,t)),{name:n,value:a}),Co=e=>e;function Eo(e=()=>{}){return({name:t,value:n})=>{let{name:a,value:r}=Fo.reduce((i,s)=>s(i),{name:t,value:n});return a!==t&&e(a,t),{name:a,value:r}}}var Fo=[];function ti(e){Fo.push(e)}function $o({name:e}){return jo().test(e)}var jo=()=>new RegExp(`^${Jr}([^:^.]+)\\b`);function yu(e,t){return({name:n,value:a})=>{let r=n.match(jo()),i=n.match(/:([a-zA-Z0-9\-_:]+)/),s=n.match(/\.[^.\]]+(?=[^\]]*$)/g)||[],o=t||e[n]||n;return{type:r?r[1]:null,value:i?i[1]:null,modifiers:s.map(c=>c.replace(".","")),expression:a,original:o}}}var gr="DEFAULT",rt=["ignore","ref","data","id","anchor","bind","init","for","model","modelable","transition","show","if",gr,"teleport"];function vu(e,t){let n=rt.indexOf(e.type)===-1?gr:e.type,a=rt.indexOf(t.type)===-1?gr:t.type;return rt.indexOf(n)-rt.indexOf(a)}function rn(e,t,n={}){e.dispatchEvent(new CustomEvent(t,{detail:n,bubbles:!0,composed:!0,cancelable:!0}))}function dt(e,t){if(typeof ShadowRoot=="function"&&e instanceof ShadowRoot){Array.from(e.children).forEach(r=>dt(r,t));return}let n=!1;if(t(e,()=>n=!0),n)return;let a=e.firstElementChild;for(;a;)dt(a,t),a=a.nextElementSibling}function pe(e,...t){console.warn(`Alpine Warning: ${e}`,...t)}var Di=!1;function wu(){Di&&pe("Alpine has already been initialized on this page. Calling Alpine.start() more than once can cause problems."),Di=!0,document.body||pe("Unable to initialize. Trying to load Alpine before `<body>` is available. Did you forget to add `defer` in Alpine's `<script>` tag?"),rn(document,"alpine:init"),rn(document,"alpine:initializing"),Xr(),tu(t=>Pe(t,dt)),Vr(t=>zt(t)),co((t,n)=>{ei(t,n).forEach(a=>a())});let e=t=>!ka(t.parentElement,!0);Array.from(document.querySelectorAll(To().join(","))).filter(e).forEach(t=>{Pe(t)}),rn(document,"alpine:initialized"),setTimeout(()=>{Eu()})}var ni=[],So=[];function Ao(){return ni.map(e=>e())}function To(){return ni.concat(So).map(e=>e())}function Ro(e){ni.push(e)}function Oo(e){So.push(e)}function ka(e,t=!1){return qt(e,n=>{if((t?To():Ao()).some(r=>n.matches(r)))return!0})}function qt(e,t){if(e){if(t(e))return e;if(e._x_teleportBack&&(e=e._x_teleportBack),!!e.parentElement)retu`)}findNextMatchSync(e,t,n){const a=this.scanner.findNextMatchSync(e,t,n);return a?{ruleId:this.rules[a.index],captureIndices:a.captureIndices}:null}},Xa=class{constructor(e,t){this.languageId=e,this.tokenType=t}},nh=class Or{_defaultAttributes;_embeddedLanguagesMatcher;constructor(t,n){this._defaultAttributes=new Xa(t,8),this._embeddedLanguagesMatcher=new ah(Object.entries(n||{}))}getDefaultAttributes(){return this._defaultAttributes}getBasicScopeAttributes(t){return t===null?Or._NULL_SCOPE_METADATA:this._getBasicScopeAttributes.get(t)}static _NULL_SCOPE_METADATA=new Xa(0,0);_getBasicScopeAttributes=new Mc(t=>{const n=this._scopeToLanguage(t),a=this._toStandardTokenType(t);return new Xa(n,a)});_scopeToLanguage(t){return this._embeddedLanguagesMatcher.match(t)||0}_toStandardTokenType(t){const n=t.match(Or.STANDARD_TOKEN_TYPE_REGEXP);if(!n)return 8;switch(n[1]){case"comment":return 1;case"string":return 2;case"regex":return 3;case"meta.embedded":return 0}throw new Error("Unexpected match for standard token type!")}static STANDARD_TOKEN_TYPE_REGEXP=/\b(comment|string|regex|meta\.embedded)\b/},ah=class{values;scopesRegExp;constructor(e){if(e.length===0)this.values=null,this.scopesRegExp=null;else{this.values=new Map(e);const t=e.map(([n,a])=>Dc(n));t.sort(),t.reverse(),this.scopesRegExp=new RegExp(`^((${t.join(")|(")}))($|\\.)`,"")}}match(e){if(!this.scopesRegExp)return;const t=e.match(this.scopesRegExp);if(t)return this.values.get(t[1])}},vs=class{constructor(e,t){this.stack=e,this.stoppedEarly=t}};function Vc(e,t,n,a,r,i,s,o){const c=t.content.length;let l=!1,u=-1;if(s){const m=rh(e,t,n,a,r,i);r=m.stack,a=m.linePos,n=m.isFirstLine,u=m.anchorPosition}const p=Date.now();for(;!l;){if(o!==0&&Date.now()-p>o)return new vs(r,!0);d()}return new vs(r,!1);function d(){const m=ih(e,t,n,a,r,u);if(!m){i.produce(r,c),l=!0;return}const g=m.captureIndices,v=m.matchedRuleId,f=g&&g.length>0?g[0].end>a:!1;if(v===Jm){const b=r.getRule(e);i.produce(r,g[0].start),r=r.withContentNameScopesList(r.nameScopesList),an(e,t,n,r,i,b.endCaptures,g),i.produce(r,g[0].end);const _=r;if(r=r.parent,u=_.getAnchorPos(),!f&&_.getEnterPos()===a){r=_,i.produce(r,c),l=!0;return}}else{const b=e.getRule(v);i.produce(r,g[0].start);const _=r,w=b.getName(t.content,g),h=r.contentNameScopesList.pushAttributed(w,e);if(r=r.push(v,a,u,g[0].end===c,null,h,h),b instanceof Rr){const C=b;an(e,t,n,r,i,C.beginCaptures,g),i.produce(r,g[0].end),u=g[0].end;const k=C.getContentName(t.content,g),$=h.pushAttributed(k,e);if(r=r.withContentNameScopesList($),C.endHasBackReferences&&(r=r.withEndRule(C.getEndWithResolvedBackReferences(t.content,g))),!f&&_.hasSameRuleAs(r)){r=r.pop(),i.produce(r,c),l=!0;return}}else if(b instanceof ha){const C=b;an(e,t,n,r,i,C.beginCaptures,g),i.produce(r,g[0].end),u=g[0].end;const k=C.getContentName(t.content,g),$=h.pushAttributed(k,e);if(r=r.withContentNameScopesList($),C.whileHasBackReferences&&(r=r.withEndRule(C.getWhileWithResolvedBackReferences(t.content,g))),!f&&_.hasSameRuleAs(r)){r=r.pop(),i.produce(r,c),l=!0;return}}else if(an(e,t,n,r,i,b.captures,g),i.produce(r,g[0].end),r=r.pop(),!f){r=r.safePop(),i.produce(r,c),l=!0;return}}g[0].end>a&&(a=g[0].end,n=!1)}}function rh(e,t,n,a,r,i){let s=r.beginRuleCapturedEOL?0:-1;const o=[];for(let c=r;c;c=c.pop()){const l=c.getRule(e);l instanceof ha&&o.push({rule:l,stack:c})}for(let c=o.pop();c;c=o.pop()){const{ruleScanner:l,findOptions:u}=ch(c.rule,e,c.stack.endRule,n,a===s),p=l.findNextMatchSync(t,a,u);if(p){if(p.ruleId!==Gc){r=c.stack.pop();break}p.captureIndices&&p.captureIndices.length&&(i.produce(c.stack,p.captureIndices[0].start),an(e,t,n,c.stack,i,c.rule.whileCaptures,p.captureIndices),i.produce(c.stack,p.captureIndices[0].end),s=p.captureIndices[0].end,p.captureIndices[0].end>a&&(a=p.captureIndices[0].end,n=!1))}else{r=c.stack.pop();break}}return{stack:r,linePos:a,anchorPosition:s,isFirstLine:n}}function ih(e,t,n,a,r,i){const s=sh(e,t,n,a,r,i),o=e.getInjections();if(o.length===0)return s;const c=oh(o,e,t,n,a,r,i);if(!c)return s;if(!s)return c;const l=s.captureIndices[0].start,u=c.captureIndices[0].start;return u<l||c.priorityMatch&&u===l?c:s}function sh(e,t,n,a,r,i){const s=r.getRule(e),{ruleScanner:o,findOptions:c}=Zc(s,e,r.endRule,n,a===i),l=o.findNextMatchSync(t,a,c);return l?{captureIndices:l.captureIndices,matchedRuleId:l.ruleId}:null}function oh(e,t,n,a,r,i,s){let o=Number.MAX_VALUE,c=null,l,u=0;const p=i.contentNameScopesList.getScopeNames();for(let d=0,m=e.length;d<m;d++){const g=e[d];if(!g.matcher(p))continue;const v=t.getRule(g.ruleId),{ruleScanner:f,findOptions:b}=Zc(v,t,null,a,r===s),_=f.findNextMatchSync(n,r,b);if(!_)continue;const w=_.captureIndices[0].start;if(!(w>=o)&&(o=w,c=_.captureIndices,l=_.ruleId,u=g.priority,o===r))break}return c?{priorityMatch:u===-1,captureIndices:c,matchedRuleId:l}:null}function Zc(e,t,n,a,r){return{ruleScanner:e.compileAG(t,n,a,r),findOptions:0}}function ch(e,t,n,a,r){return{ruleScanner:e.compileWhileAG(t,n,a,r),findOptions:0}}function an(e,t,n,a,r,i,s){if(i.length===0)return;const o=t.content,c=Math.min(i.length,s.length),l=[],u=s[0].end;for(let p=0;p<c;p++){const d=i[p];if(d===null)continue;const m=s[p];if(m.length===0)continue;if(m.start>u)break;for(;l.length>0&&l[l.length-1].endPos<=m.start;)r.produceFromScopes(l[l.length-1].scopes,l[l.length-1].endPos),l.pop();if(l.length>0?r.produceFromScopes(l[l.length-1].scopes,m.start):r.produce(a,m.start),d.retokenizeCapturedWithRuleId){const v=d.getName(o,s),f=a.contentNameScopesList.pushAttributed(v,e),b=d.getContentName(o,s),_=f.pushAttributed(b,e),w=a.push(d.retokenizeCapturedWithRuleId,m.start,-1,!1,null,f,_),h=e.createOnigString(o.substring(0,m.end));Vc(e,h,n&&m.start===0,m.start,w,r,!1,0),Bc(h);continue}const g=d.getName(o,s);if(g!==null){const f=(l.length>0?l[l.length-1].scopes:a.contentNameScopesList).pushAttributed(g,e);l.push(new lh(f,m.end))}}for(;l.length>0;)r.produceFromScopes(l[l.length-1].scopes,l[l.length-1].endPos),l.pop()}var lh=class{scopes;endPos;constructor(e,t){this.scopes=e,this.endPos=t}};function uh(e,t,n,a,r,i,s,o){return new dh(e,t,n,a,r,i,s,o)}function ws(e,t,n,a,r){const i=da(t,ga),s=Hc.getCompiledRuleId(n,a,r.repository);for(const o of i)e.push({debugSelector:t,matcher:o.matcher,ruleId:s,grammar:r,priority:o.priority})}function ga(e,t){if(t.length<e.length)return!1;let n=0;return e.every(a=>{for(let r=n;r<t.length;r++)if(ph(t[r],a))return n=r+1,!0;return!1})}function ph(e,t){if(!e)return!1;if(e===t)return!0;const n=t.length;return e.length>n&&e.substr(0,n)===t&&e[n]==="."}var dh=class{constructor(e,t,n,a,r,i,s,o){if(this._rootScopeName=e,this.balancedBracketSelectors=i,this._onigLib=o,this._basicScopeAttributesProvider=new nh(n,a),this._rootId=-1,this._lastRuleId=0,this._ruleId2desc=[null],this._includedGrammars={},this._grammarRepository=s,this._grammar=xs(t,null),this._injections=null,this._tokenTypeMatchers=[],r)for(const c of Object.keys(r)){const l=da(c,ga);for(const u of l)this._tokenTypeMatchers.push({matcher:u.matcher,type:r[c]})}}_rootId;_lastRuleId;_ruleId2desc;_includedGrammars;_grammarRepository;_grammar;_injections;_basicScopeAttributesProvider;_tokenTypeMatchers;get themeProvider(){return this._grammarRepository}dispose(){for(const e of this._ruleId2desc)e&&e.dispose()}createOnigScanner(e){return this._onigLib.createOnigScanner(e)}createOnigString(e){return this._onigLib.createOnigString(e)}getMetadataForScope(e){return this._basicScopeAttributesProvider.getBasicScopeAttributes(e)}_collectInjections(){const e={lookup:r=>r===this._rootScopeName?this._grammar:this.getExternalGrammar(r),injections:r=>this._grammarRepository.injections(r)},t=[],n=this._rootScopeName,a=e.lookup(n);if(a){const r=a.injections;if(r)for(let s in r)ws(t,s,r[s],this,a);const i=this._grammarRepository.injections(n);i&&i.forEach(s=>{const o=this.getExternalGrammar(s);if(o){const c=o.injectionSelector;c&&ws(t,c,o,this,o)}})}return t.sort((r,i)=>r.priority-i.priority),t}getInjections(){return this._injections===null&&(this._injections=this._collectInjections()),this._injections}registerRule(e){const t=++this._lastRuleId,n=e(t);return this._ruleId2desc[t]=n,n}getRule(e){return this._ruleId2desc[e]}getExternalGrammar(e,t){if(this._includedGrammars[e])return this._includedGrammars[e];if(this._grammarRepository){const n=this._grammarRepository.lookup(e);if(n)return this._includedGrammars[e]=xs(n,t&&t.$base),this._includedGrammars[e]}}tokenizeLine(e,t,n=0){const a=this._tokenize(e,t,!1,n);return{tokens:a.lineTokens.getResult(a.ruleStack,a.lineLength),ruleStack:a.ruleStack,stoppedEarly:a.stoppedEarly}}tokenizeLine2(e,t,n=0){const a=this._tokenize(e,t,!0,n);return{tokens:a.lineTokens.getBinaryResult(a.ruleStack,a.lineLength),ruleStack:a.ruleStack,stoppedEarly:a.stoppedEarly}}_tokenize(e,t,n,a){this._rootId===-1&&(this._rootId=Hc.getCompiledRuleId(this._grammar.repository.$self,this,this._grammar.repository),this.getInjections());let r;if(!t||t===Ir.NULL){r=!0;const l=this._basicScopeAttributesProvider.getDefaultAttributes(),u=this.themeProvider.getDefaults(),p=Lt.set(0,l.languageId,l.tokenType,null,u.fontStyle,u.foregroundId,u.backgroundId),d=this.getRule(this._rootId).getName(null,null);let m;d?m=un.createRootAndLookUpScopeName(d,p,this):m=un.createRoot("unknown",p),t=new Ir(null,this._rootId,-1,-1,!1,null,m,m)}else r=!1,t.reset();e=e+`
+`;const i=this.createOnigString(e),s=i.content.length,o=new hh(n,e,this._tokenTypeMatchers,this.balancedBracketSelectors),c=Vc(this,i,r,0,t,o,!0,a);return Bc(i),{lineLength:s,lineTokens:o,ruleStack:c.stack,stoppedEarly:c.stoppedEarly}}};function xs(e,t){return e=Tm(e),e.repository=e.repository||{},e.repository.$self={$vscodeTextmateLocation:e.$vscodeTextmateLocation,patterns:e.patterns,name:e.scopeName},e.repository.$base=t||e.repository.$self,e}var un=class Ce{constructor(t,n,a){this.parent=t,this.scopePath=n,this.tokenAttributes=a}static fromExtension(t,n){let a=t,r=t?.scopePath??null;for(const i of n)r=Ya.push(r,i.scopeNames),a=new Ce(a,r,i.encodedTokenAttributes);return a}static createRoot(t,n){return new Ce(null,new Ya(null,t),n)}static createRootAndLookUpScopeName(t,n,a){const r=a.getMetadataForScope(t),i=new Ya(null,t),s=a.themeProvider.themeMatch(i),o=Ce.mergeAttributes(n,r,s);return new Ce(null,i,o)}get scopeName(){return this.scopePath.scopeName}toString(){return this.getScopeNames().join(" ")}equals(t){return Ce.equals(this,t)}static equals(t,n){do{if(t===n||!t&&!n)return!0;if(!t||!n||t.scopeName!==n.scopeName||t.tokenAttributes!==n.tokenAttributes)return!1;t=t.parent,n=n.parent}while(!0)}static mergeAttributes(t,n,a){let r=-1,i=0,s=0;return a!==null&&(r=a.fontStyle,i=a.foregroundId,s=a.backgroundId),Lt.set(t,n.languageId,n.tokenType,null,r,i,s)}pushAttributed(t,n){if(t===null)return this;if(t.indexOf(" ")===-1)return Ce._pushAttributed(this,t,n);const a=t.split(/ /g);let r=this;for(const i of a)r=Ce._pushAttributed(r,i,n);return r}static _pushAttributed(t,n,a){const r=a.getMetadataForScope(n),i=t.scopePath.push(n),s=a.themeProvider.themeMatch(i),o=Ce.mergeAttributes(t.tokenAttributes,r,s);return new Ce(t,i,o)}getScopeNames(){return this.scopePath.getSegments()}getExtensionIfDefined(t){const n=[];let a=this;for(;a&&a!==t;)n.push({encodedTokenAttributes:a.tokenAttributes,scopeNames:a.scopePath.getExtensionIfDefined(a.parent?.scopePath??null)}),a=a.parent;return a===t?n.reverse():void 0}},Ir=class nt{constructor(t,n,a,r,i,s,o,c){this.parent=t,this.ruleId=n,this.beginRuleCapturedEOL=i,this.endRule=s,this.nameScopesList=o,this.contentNameScopesList=c,this.depth=this.parent?this.parent.depth+1:1,this._enterPos=a,this._anchorPos=r}_stackElementBrand=void 0;static NULL=new nt(null,0,0,0,!1,null,null,null);_enterPos;_anchorPos;depth;equals(t){return t===null?!1:nt._equals(this,t)}static _equals(t,n){return t===n?!0:this._structuralEquals(t,n)?un.equals(t.contentNameScopesList,n.contentNameScopesList):!1}static _structuralEquals(t,n){do{if(t===n||!t&&!n)return!0;if(!t||!n||t.depth!==n.depth||t.ruleId!==n.ruleId||t.endRule!==n.endRule)return!1;t=t.parent,n=n.parent}while(!0)}clone(){return this}static _reset(t){for(;t;)t._enterPos=-1,t._anchorPos=-1,t=t.parent}reset(){nt._reset(this)}pop(){return this.parent}safePop(){return this.parent?this.parent:this}push(t,n,a,r,i,s,o){return new nt(this,t,n,a,r,i,s,o)}getEnterPos(){return this._enterPos}getAnchorPos(){return this._anchorPos}getRule(t){return t.getRule(this.ruleId)}toString(){const t=[];return this._writeString(t,0),"["+t.join(",")+"]"}_writeString(t,n){return this.parent&&(n=this.parent._writeString(t,n)),t[n++]=`(${this.ruleId}, ${this.nameScopesList?.toString()}, ${this.contentNameScopesList?.toString()})`,n}withContentNameScopesList(t){return this.contentNameScopesList===t?this:this.parent.push(this.ruleId,this._enterPos,this._anchorPos,this.beginRuleCapturedEOL,this.endRule,this.nameScopesList,t)}withEndRule(t){return this.endRule===t?this:new nt(this.parent,this.ruleId,this._enterPos,this._anchorPos,this.beginRuleCapturedEOL,t,this.nameScopesList,this.contentNameScopesList)}hasSameRuleAs(t){let n=this;for(;n&&n._enterPos===t._enterPos;){if(n.ruleId===t.ruleId)return!0;n=n.parent}return!1}toStateStackFrame(){return{ruleId:this.ruleId,beginRuleCapturedEOL:this.beginRuleCapturedEOL,endRule:this.endRule,nameScopesList:this.nameScopesList?.getExtensionIfDefined(this.parent?.nameScopesList??null)??[],contentNameScopesList:this.contentNameScopesList?.getExtensionIfDefined(this.nameScopesList)??[]}}static pushFrame(t,n){const a=un.fromExtension(t?.nameScopesList??null,n.nameScopesList);return new nt(t,n.ruleId,n.enterPos??-1,n.anchorPos??-1,n.beginRuleCapturedEOL,n.endRule,a,un.fromExtension(a,n.contentNameScopesList))}},mh=class{balancedBracketScopes;unbalancedBracketScopes;allowAny=!1;constructor(e,t){this.balancedBracketScopes=e.flatMap(n=>n==="*"?(this.allowAny=!0,[]):da(n,ga).map(a=>a.matcher)),this.unbalancedBracketScopes=t.flatMap(n=>da(n,ga).map(a=>a.matcher))}get matchesAlways(){return this.allowAny&&this.unbalancedBracketScopes.length===0}get matchesNever(){return this.balancedBracketScopes.length===0&&!this.allowAny}match(e){for(const t of this.unbalancedBracketScopes)if(t(e))return!1;for(const t of this.balancedBracketScopes)if(t(e))return!0;return this.allowAny}},hh=class{constructor(e,t,n,a){this.balancedBracketSelectors=a,this._emitBinaryT\f\r &/=>`.split(""),`	
+\f\r "&'/=>\``.split("")],[`\0	
+\f\r "&'/<=>`.split(""),`\0	
+\f\r "&'/<=>\``.split("")]],unquoted:[[`	
+\f\r &>`.split(""),`\0	
+\f\r "&'<=>\``.split("")],[`\0	
+\f\r "&'<=>\``.split(""),`\0	
+\f\r "&'<=>\``.split("")]],single:[["&'".split(""),"\"&'`".split("")],["\0&'".split(""),"\0\"&'`".split("")]],double:[['"&'.split(""),"\"&'`".split("")],['\0"&'.split(""),"\0\"&'`".split("")]]};function _g(e,t,n,a){const r=a.schema,i=r.space==="svg"?!1:a.settings.omitOptionalTags;let s=r.space==="svg"?a.settings.closeEmptyElements:a.settings.voids.includes(e.tagName.toLowerCase());const o=[];let c;r.space==="html"&&e.tagName==="svg"&&(a.schema=nl);const l=yg(a,e.properties),u=a.all(r.space==="html"&&e.tagName==="template"?e.content:e);return a.schema=r,u&&(s=!1),(l||!i||!dg(e,t,n))&&(o.push("<",e.tagName,l?" "+l:""),s&&(r.space==="svg"||a.settings.closeSelfClosing)&&(c=l.charAt(l.length-1),(!a.settings.tightSelfClosing||c==="/"||c&&c!=='"'&&c!=="'")&&o.push(" "),o.push("/")),o.push(">")),o.push(u),!s&&(!i||!Ei(e,t,n))&&o.push("</"+e.tagName+">"),o.join("")}function yg(e,t){const n=[];let a=-1,r;if(t){for(r in t)if(t[r]!==null&&t[r]!==void 0){const i=vg(e,r,t[r]);i&&n.push(i)}}for(;++a<n.length;){const i=e.settings.tightAttributes?n[a].charAt(n[a].length-1):void 0;a!==n.length-1&&i!=='"'&&i!=="'"&&(n[a]+=" ")}return n.join("")}function vg(e,t,n){const a=kh(e.schema,t),r=e.settings.allowParseErrors&&e.schema.space==="html"?0:1,i=e.settings.allowDangerousCharacters?0:1;let s=e.quote,o;if(a.overloadedBoolean&&(n===a.attribute||n==="")?n=!0:(a.boolean||a.overloadedBoolean)&&(typeof n!="string"||n===a.attribute||n==="")&&(n=!!n),n==null||n===!1||typeof n=="number"&&Number.isNaN(n))return"";const c=St(a.attribute,Object.assign({},e.settings.characterReferences,{subset:Yn.name[r][i]}));return n===!0||(n=Array.isArray(n)?(a.commaSeparated?Yh:Xh)(n,{padLeft:!e.settings.tightCommaSeparatedLists}):String(n),e.settings.collapseEmptyAttributes&&!n)?c:(e.settings.preferUnquoted&&(o=St(n,Object.assign({},e.settings.characterReferences,{attribute:!0,subset:Yn.unquoted[r][i]}))),o!==n&&(e.settings.quoteSmart&&$s(n,s)>$s(n,e.alternative)&&(s=e.alternative),o=s+St(n,Object.assign({},e.settings.characterReferences,{subset:(s==="'"?Yn.single:Yn.double)[r][i],attribute:!0}))+s),c+(o&&"="+o))}const wg=["<","&"];function ol(e,t,n,a){return n&&n.type==="element"&&(n.tagName==="script"||n.tagName==="style")?e.value:St(e.value,Object.assign({},a.settings.characterReferences,{subset:wg}))}function xg(e,t,n,a){return a.settings.allowDangerousHtml?e.value:ol(e,t,n,a)}function kg(e,t,n,a){return a.all(e)}const Cg=$h("type",{invalid:Eg,unknown:Fg,handlers:{comment:Vh,doctype:Zh,element:_g,raw:xg,root:kg,text:ol}});function Eg(e){throw new Error("Expected node, not `"+e+"`")}function Fg(e){const t=e;throw new Error("Cannot compile unknown node `"+t.type+"`")}const $g={},jg={},Sg=[];function Ag(e,t){const n=t||$g,a=n.quote||'"',r=a==='"'?"'":'"';if(a!=='"'&&a!=="'")throw new Error("Invalid quote `"+a+"`, expected `'` or `\"`");return{one:Tg,all:Rg,settings:{omitOptionalTags:n.omitOptionalTags||!1,allowParseErrors:n.allowParseErrors||!1,allowDangerousCharacters:n.allowDangerousCharacters||!1,quoteSmart:n.quoteSmart||!1,preferUnquoted:n.preferUnquoted||!1,tightAttributes:n.tightAttributes||!1,upperDoctype:n.upperDoctype||!1,tightDoctype:n.tightDoctype||!1,bogusComments:n.bogusComments||!1,tightCommaSeparatedLists:n.tightCommaSeparatedLists||!1,tightSelfClosing:n.tightSelfClosing||!1,collapseEmptyAttributes:n.collapseEmptyAttributes||!1,allowDangerousHtml:n.allowDangerousHtml||!1,voids:n.voids||bh,characterReferences:n.characterReferences||jg,closeSelfClosing:n.closeSelfClosing||!1,closeEmptyElements:n.closeEmptyElements||!1},schema:n.space==="svg"?nl:Fh,quote:a,alternative:r}.one(Array.isArray(e)?{type:"root",children:e}:e,void 0,void 0)}function Tg(e,t,n){return Cg(e,t,n,this)}function Rg(e){const t=[],n=e&&e.children||Sg;let a=-1;for(;++a<n.length;)t[a]=this.one(n[a],a,e);return t.join("")}function fa(e,t){const n=typeof e=="string"?{}:{...e.colorReplacements},a=typeof e=="string"?e:e.name;for(const[r,i]of Object.entries(t?.colorReplacements||{}))typeof i=="string"?n[r]=i:r===a&&Object.assign(n,i);return n}function Ge(e,t){return e&&(t?.[e?.toLowerCase()]||e)}function Og(e){return Array.isArray(e)?e:[e]}async function cl(e){return Promise.resolve(typeof e=="function"?e():e).then(t=>t.default||t)}function Fi(e){return!e||["plaintext","txt","text","plain"].includes(e)}function Ig(e){return e==="ansi"||Fi(e)}function $i(e){return e==="none"}function Ng(e){return $i(e)}function ll(e,t){if(!t)return e;e.properties||={},e.properties.class||=[],typeof e.properties.class=="string"&&(e.properties.class=e.properties.class.split(/\s+/g)),Array.isArray(e.properties.class)||(e.properties.class=[]);const n=Array.isArray(t)?t:t.split(/\s+/g);for(const a of n)a&&!e.properties.class.includes(a)&&e.properties.class.push(a);return e}function Ra(e,t=!1){const n=e.split(/(\r?\n)/g);let a=0;const r=[];for(let i=0;i<n.length;i+=2){const s=t?n[i]+(n[i+1]||""):n[i];r.push([s,a]),a+=n[i].length,a+=n[i+1]?.length||0}return r}function Lg(e){const t=Ra(e,!0).map(([r])=>`}));let f={type:"element",tagName:"span",properties:{class:"line"},children:[]},b=0;for(const _ of g){let w={type:"element",tagName:"span",properties:{..._.htmlAttrs},children:[{type:"text",value:_.content}]};const h=qr(_.htmlStyle||ba(_));h&&(w.properties.style=h);for(const C of r)w=C?.span?.call(d,w,v+1,b,f,_)||w;o==="inline"?s.children.push(w):o==="classic"&&f.children.push(w),b+=_.content.length}if(o==="classic"){for(const _ of r)f=_?.line?.call(d,f,v+1)||f;p.push(f),i.push(f)}}),o==="classic"){for(const g of r)u=g?.code?.call(d,u)||u;l.children.push(u);for(const g of r)l=g?.pre?.call(d,l)||l;s.children.push(l)}let m=s;for(const g of r)m=g?.root?.call(d,m)||m;return a&&Oa(m,a),m}function lf(e){return e.map(t=>{const n=[];let a="",r=0;return t.forEach((i,s)=>{const c=!(i.fontStyle&&(i.fontStyle&ee.Underline||i.fontStyle&ee.Strikethrough));c&&i.content.match(/^\s+$/)&&t[s+1]?(r||(r=i.offset),a+=i.content):a?(c?n.push({...i,offset:r,content:a+i.content}):n.push({content:a,offset:r},i),r=0,a=""):n.push(i)}),n})}function uf(e){return e.map(t=>t.flatMap(n=>{if(n.content.match(/^\s+$/))return n;const a=n.content.match(/^(\s*)(.*?)(\s*)$/);if(!a)return n;const[,r,i,s]=a;if(!r&&!s)return n;const o=[{...n,offset:n.offset+r.length,content:i}];return r&&o.unshift({content:r,offset:n.offset}),s&&o.push({content:s,offset:n.offset+r.length+i.length}),o}))}function pf(e){return e.map(t=>{const n=[];for(const a of t){if(n.length===0){n.push({...a});continue}const r=n[n.length-1],i=qr(r.htmlStyle||ba(r)),s=qr(a.htmlStyle||ba(a)),o=r.fontStyle&&(r.fontStyle&ee.Underline||r.fontStyle&ee.Strikethrough),c=a.fontStyle&&(a.fontStyle&ee.Underline||a.fontStyle&ee.Strikethrough);!o&&!c&&i===s?r.content+=a.content:n.push({...a})}return n})}const df=Ag;function mf(e,t,n){const a={meta:{},options:n,codeToHast:(i,s)=>wa(e,i,s),codeToTokens:(i,s)=>va(e,i,s)};let r=df(wa(e,t,n,a));for(const i of _a(n))r=i.postprocess?.call(a,r,n)||r;return r}const Is={light:"#333333",dark:"#bbbbbb"},Ns={light:"#fffffe",dark:"#1e1e1e"},Ls="__shiki_resolved";function Ai(e){if(e?.[Ls])return e;const t={...e};t.tokenColors&&!t.settings&&(t.settings=t.tokenColors,delete t.tokenColors),t.type||="dark",t.colorReplacements={...t.colorReplacements},t.settings||=[];let{bg:n,fg:a}=t;if(!n||!a){const o=t.settings?t.settings.find(c=>!c.name&&!c.scope):void 0;o?.settings?.foreground&&(a=o.settings.foreground),o?.settings?.background&&(n=o.settings.background),!a&&t?.colors?.["editor.foreground"]&&(a=t.colors["editor.foreground"]),!n&&t?.colors?.["editor.background"]&&(n=t.colors["editor.background"]),a||(a=t.type==="light"?Is.light:Is.dark),n||(n=t.type==="light"?Ns.light:Ns.dark),t.fg=a,t.bg=n}t.settings[0]&&t.settings[0].settings&&!t.settings[0].scope||t.settings.unshift({settings:{foreground:t.fg,background:t.bg}});let r=0;const i=new Map;function s(o){if(i.has(o))return i.get(o);r+=1;const c=`#${r.toString(16).padStart(8,"0").toLowerCase()}`;return t.colorReplacements?.[`#${c}`]?s(o):(i.set(o,c),c)}t.settings=t.settings.map(o=>{const c=o.settings?.foreground&&!o.settings.foreground.startsWith("#"),l=o.settings?.background&&!o.settings.background.startsWith("#");if(!c&&!l)return o;const u={...o,settings:{...o.settings}};if(c){const p=s(o.settings.foreground);t.colorReplacements[p]=o.settings.foreground,u.settings.foreground=p}if(l){const p=s(o.settings.background);t.colorReplacements[p]=o.settings.background,u.settings.background=p}return u});for(const o of Object.keys(t.colors||{}))if((o==="editor.foreground"||o==="editor.background"||o.startsWith("terminal.ansi"))&&!t.colors[o]?.startsWith("#")){const c=s(t.colors[o]);t.colorReplacements[c]=t.colors[o],t.colors[o]=c}return Object.defineProperty(t,Ls,{enumerable:!1,writable:!1,value:!0}),t}async function hf(e){return Array.from(new Set((await Promise.all(e.filter(t=>!Ig(t)).map(async t=>await cl(t).then(n=>Array.isArray(n)?n:[n])))).flat()))}async function gf(e){return(await Promise.all(e.map(async n=>Ng(n)?null:Ai(await cl(n))))).filter(n=>!!n)}class $t extends Error{constructor(t){super(t),this.name="ShikiError"}}class ff extends fh{constructor(t,n,a,r={}){super(t),this._resolver=t,this._themes=n,this._langs=a,this._alias=r,this._themes.map(i=>this.loadTheme(i)),this.loadLanguages(this._langs)}_resolvedThemes=new Map;_resolvedGrammars=new Map;_langMap=new Map;_langGraph=new Map;_textmateThemeCache=new WeakMap;_loadedThemesCache=null;_loadedLanguagesCache=null;getTheme(t){return typeof t=="string"?this._resolvedThemes.get(t):this.loadTheme(t)}loadTheme(t){const n=Ai(t);return n.name&&(this._resolvedThemes.set(n.name,n),this._loadedThemesCache=null),n}getLoadedThemes(){return this._loadedThemesCache||(this._loadedThemesCache=[...this._resolvedThemes.keys()]),this._loadedThemesCache}setTheme(t){let n=this._textmateThemeCache.get(t);n||(n=pa.createFromRawTheme(t),this._textmateThemeCache.set(t,n)),this._syncRegistry.setTheme(n)}getGrammar(t){if(this._alias[t]){const n=new Set([t]);for(;this._alias[t];){if(t=this.  \\ (?:
+    ${hl}
+    | [gk]<[^>]*>?
+    | [gk]'[^']*'?
+    | .
+  )
+  | \( (?:
+    \? (?:
+      [:=!>({]
+      | <[=!]
+      | <[^>]*>
+      | '[^']*'
+      | ~\|?
+      | #(?:[^)\\]|\\.?)*
+      | [^:)]*[:)]
+    )?
+    | \*[^\)]*\)?
+  )?
+  | (?:${Ri.source})+
+  | ${ml}
+  | .
+`.replace(/\s+/g,""),"gsu"),tr=new RegExp(X`
+  \\ (?:
+    ${hl}
+    | .
+  )
+  | \[:(?:\^?\p{Alpha}+|\^):\]
+  | ${ml}
+  | &&
+  | .
+`.replace(/\s+/g,""),"gsu");function wf(e,t={}){const n={flags:"",...t,rules:{captureGroup:!1,singleline:!1,...t.rules}};if(typeof e!="string")throw new Error("String expected as pattern");const a=qf(n.flags),r=[a.extended],i={captureGroup:n.rules.captureGroup,getCurrentModX(){return r.at(-1)},numOpenGroups:0,popModX(){r.pop()},pushModX(p){r.push(p)},replaceCurrentModX(p){r[r.length-1]=p},singleline:n.rules.singleline};let s=[],o;for(Xn.lastIndex=0;o=Xn.exec(e);){const p=xf(i,e,o[0],Xn.lastIndex);p.tokens?s.push(...p.tokens):p.token&&s.push(p.token),p.lastIndex!==void 0&&(Xn.lastIndex=p.lastIndex)}const c=[];let l=0;s.filter(p=>p.type==="GroupOpen").forEach(p=>{p.kind==="capturing"?p.number=++l:p.raw==="("&&c.push(p)}),l||c.forEach((p,d)=>{p.kind="capturing",p.number=d+1});const u=l||c.length;return{tokens:s.map(p=>p.type==="EscapedNumber"?Bf(p,u):p).flat(),flags:a}}function xf(e,t,n,a){const[r,i]=n;if(n==="["||n==="[^"){const s=kf(t,n,a);return{tokens:s.tokens,lastIndex:s.lastIndex}}if(r==="\\"){if("AbBGyYzZ".includes(i))return{token:Ps(n,n)};if(/^\\g[<']/.test(n)){if(!/^\\g(?:<[^>]+>|'[^']+')$/.test(n))throw new Error(`Invalid group name "${n}"`);return{token:Of(n)}}if(/^\\k[<']/.test(n)){if(!/^\\k(?:<[^>]+>|'[^']+')$/.test(n))throw new Error(`Invalid group name "${n}"`);return{token:fl(n)}}if(i==="K")return{token:bl("keep",n)};if(i==="N"||i==="R")return{token:st("newline",n,{negate:i==="N"})};if(i==="O")return{token:st("any",n)};if(i==="X")return{token:st("text_segment",n)};const s=gl(n,{inCharClass:!1});return Array.isArray(s)?{tokens:s}:{token:s}}if(r==="("){if(i==="*")return{token:Pf(n)};if(n==="(?{")throw new Error(`Unsupported callout "${n}"`);if(n.startsWith("(?#")){if(t[a]!==")")throw new Error('Unclosed comment group "(?#"');return{lastIndex:a+1}}if(/^\(\?[-imx]+[:)]$/.test(n))return{token:Lf(n,e)};if(e.pushModX(e.getCurrentModX()),e.numOpenGroups++,n==="("&&!e.captureGroup||n==="(?:")return{token:Et("group",n)};if(n==="(?>")return{token:Et("atomic",n)};if(n==="(?="||n==="(?!"||n==="(?<="||n==="(?<!")return{token:Et(n[2]==="<"?"lookbehind":"lookahead",n,{negate:n.endsWith("!")})};if(n==="("&&e.captureGroup||n.startsWith("(?<")&&n.endsWith(">")||n.startsWith("(?'")&&n.endsWith("'"))return{token:Et("capturing",n,{...n!=="("&&{name:n.slice(3,-1)}})};if(n.startsWith("(?~")){if(n==="(?~|")throw new Error(`Unsupported absence function kind "${n}"`);return{token:Et("absence_repeater",n)}}throw n==="(?("?new Error(`Unsupported conditional "${n}"`):new Error(`Invalid or unsupported group option "${n}"`)}if(n===")"){if(e.popModX(),e.numOpenGroups--,e.numOpenGroups<0)throw new Error('Unmatched ")"');return{token:Af(n)}}if(e.getCurrentModX()){if(n==="#"){const s=t.indexOf(`
+`,a);return{lastIndex:s===-1?t.length:s}}if(/^\s$/.test(n)){const s=/\s+/y;return s.lastIndex=a,{lastIndex:s.exec(t)?s.lastIndex:a}}}if(n===".")return{token:st("dot",n)};if(n==="^"||n==="$"){const s=e.singleline?{"^":X`\A`,$:X`\Z`}[n]:n;return{token:Ps(s,n)}}return n==="|"?{token:Ef(n)}:Ri.test(n)?{tokens:Uf(n)}:{token:Ne(Gt(n),n)}}function kf(e,t,n){const a=[Ds(t[1]==="^",t)];let r=1,i;for(tr.lastIndex=n;i=tr.exec(e);){const s=i[0];if(s[0]==="["&&s[1]!==":")r++,a.push(Ds(s[1]==="^",s));else if(s==="]"){if(a.at(-1).type==="CharacterClassOpen")a.push(Ne(93,s));else if(r--,a.push(Ff(s)),!r)break}else{const o=Cf(s);Array.isArray(o)?a.push(...o):a.push(o)}}return{tokens:a,lastIndex:tr.lastIndex||e.length}}function Cf(e){if(e[0]==="\\")return gl(e,{inCharClass:!0});if(e[0]==="["){const t=/\[:(?<negate>\^?)(?<name>[a-z]+):\]/.exec(e);if(!t||!Ti.has(t.groups.name))throw new Error(`Invalid POSIX class "${e}"`);return st("posix",e,{value:t.groups.name,negate:!!t.groups.negate})}return e==="-"?$f(e):e==="&&"?jf(e):Ne(Gt(e),e)}function gl(e,{inCharClass:t}){const n=e[1];if(n==="c"||n==="C")return Nf(e);if("dDhHsSwW".includes(n))return Df(e);if(e.startsWith(X`\o{`))throw new Error(`Incomplete, invalid, or unsupported octal code point "${e}"`);if(/^\\[pP]\{/.test(e)){if(e.length===3)throw new Error(`Incomplete or invalid Unicode property "${e}"`);return Mf(e)}if(new RegExp("^\\\\x[89A-Fa-f]\\p{AHex}","u").test(e))try{const a=e.split(/\\x/).slice(1).map(s=>parseInt(s,16)),r=new TextDecoder("utf-8",{ignoreBOM:!0,fatal:!0}).decode(new Uint8Array(a)),i=new TextEncoder;return[...r].map(s=>{const o=[...i.encode(s)].map(c=>`\\x${c.toString(16)}`).join("");return Ne(Gt(s),o)})}catch{throw new Error(`Multibyte code "${e}" incomplete or invalid in Oniguruma`)}if(n==="u"||n==="x")return Ne(zf(e),e);if(Ms.has(n))return Ne(Ms.get(n),e);if(/\d/.test(n))return Sf(t,e);if(e==="\\")throw new Error(X`Incomplete escape "\"`);if(n==="M")throw new Error(`Unsupported meta "${e}"`);if([...e].length===2)return Ne(e.codePointAt(1),e);throw new Error(`Unexpected escape "${e}"`)}function Ef(e){return{type:"Alternator",raw:e}}function Ps(e,t){return{type:"Assertion",kind:e,raw:t}}function fl(e){return{type:"Backreference",raw:e}}function Ne(e,t){return{type:"Character",value:e,raw:t}}function Ff(e){return{type:"CharacterClassClose",raw:e}}function $f(e){return{type:"CharacterClassHyphen",raw:e}}function jf(e){return{type:"CharacterClassIntersector",raw:e}}function Ds(e,t){return{type:"CharacterClassOpen",negate:e,raw:t}}function st(e,t,n={}){return{type:"CharacterSet",kind:e,...n,raw:t}}function bl(e,t,n={}){return e==="keep"?{type:"Directive",kind:e,raw:t}:{type:"Directive",kind:e,flags:Ht(n.flags),raw:t}}function Sf(e,t){return{type:"EscapedNumber",inCharClass:e,raw:t}}function Af(e){return{type:"GroupClose",raw:e}}function Et(e,t,n={}){return{type:"GroupOpen",kind:e,...n,raw:t}}function Tf(e,t,n,a){return{type:"NamedCallout",kind:e,tag:t,arguments:n,raw:a}}function Rf(e,t,n,a){return{type:"Quantifier",kind:e,min:t,max:n,raw:a}}function Of(e){return{type:"Subroutine",raw:e}}const If=new Set(["COUNT","CMP","ERROR","FAIL","MAX","MISMATCH","SKIP","TOTAL_COUNT"]),Ms=new Map([["a",7],["b",8],["e",27],["f",12],["n",10],["r",13],["t",9],["v",11]]);function Nf(e){const t=e[1]==="c"?e[2]:e[3];if(!t||!/[A-Za-z]/.test(t))throw new Error(`Unsupported control character "${e}"`);return Ne(Gt(t.toUpperCase())-64,e)}function Lf(e,t){let{on:n,off:a}=/^\(\?(?<on>[imx]*)(?:-(?<off>[-imx]*))?/.exec(e).groups;a??="";const r=(t.getCurrentModX()||n.includes("x"))&&!a.includes("x"),i=zs(n),s=zs(a),o={};if(i&&(o.enable=i),s&&(o.disable=s),e.endsWith(")"))return t.replaceCurrentModX(r),bl("flags",e,{flags:o});if(e.endsWith(":"))return t.pushModX(r),t.numOpenGroups++,Et("group",e,{...(i||s)&&{flags:o}});throw new Error(`Unexpected flag modifier "${e}"`)}function Pf(e){const t=/\(\*(?<name>[A-Za-z_]\w*)?(?:\[(?<tag>(?:[A-Za-z_]\w*)?)\])?(?:\{(?<args>[^}]*)\})?\)/.exec(e);if(!t)throw new Error(`Incomplete or invalid named callout "${e}"`);const{name:n,tag:a,args:r}=t.groups;if(!n)throw new Error(`Invalid named callout "${e}"`);if(a==="")throw new Error(`Named callout tag with empty value not allowed "${e}"`);const i=r?r.split(",").filter(u=>u!=="").map(u=>/^[+-]?\d+$/.test(u)?+u:u):[],[s,o,c]=i,l=If.has(n)?n.toLowerCase():"custom";switch(l){case"fail":case"mismatch":case"skip":if(i.length>0)throw new Error(`Named callout arguments not allowed "${i}"`);break;case"error":if(i.length>1)throw new Error(`Named callout allows only one argument "${i}"`);if(typeof s=="string")throw new Error(`Named callout argument must be a number "${s}"`);break;case"max":if(!i.length||i.length>2)throw new Error(`Named callout must have one or two arguments "${i}"`);if(typeof s=="string"&&!/^[A-Za-z_]\w*$/.test(s))throw new Error(`Named callout argument one must be a tag or number "${s}"`);if(i.length===2&&(typeof o=="number"||!/^[<>X]$/.test(o)))throw new Error(`Named callout optional argument tw\\(?: \d+
+  | c[A-Za-z]
+  | [gk]<[^>]+>
+  | [pPu]\{[^\}]+\}
+  | u[A-Fa-f\d]{4}
+  | x[A-Fa-f\d]{2}
+  )
+| \((?: \? (?: [:=!>]
+  | <(?:[=!]|[^>]+>)
+  | [A-Za-z\-]+:
+  | \(DEFINE\)
+  ))?
+| (?<qBase>${El})(?<qMod>[?+]?)(?<invalidQ>[?*+\{]?)
+| \\?.
+`.replace(/\s+/g,""),"gsu");function fb(e){if(!new RegExp(`${El}\\+`).test(e))return{pattern:e};const t=[];let n=null,a=null,r="",i=0,s;for(nr.lastIndex=0;s=nr.exec(e);){const{0:o,index:c,groups:{qBase:l,qMod:u,invalidQ:p}}=s;if(o==="[")i||(a=c),i++;else if(o==="]")i?i--:a=null;else if(!i)if(u==="+"&&r&&!r.startsWith("(")){if(p)throw new Error(`Invalid quantifier "${o}"`);let d=-1;if(/^\{\d+\}$/.test(l))e=db(e,c+l.length,u,"");else{if(r===")"||r==="]"){const m=r===")"?n:a;if(m===null)throw new Error(`Invalid unmatched "${r}"`);e=`${e.slice(0,m)}(?>${e.slice(m,c)}${l})${e.slice(c+o.length)}`}else e=`${e.slice(0,c-r.length)}(?>${r}${l})${e.slice(c+o.length)}`;d+=4}nr.lastIndex+=d}else o[0]==="("?t.push(c):o===")"&&(n=t.length?t.pop():null);r=o}return{pattern:e}}const ue=String.raw,bb=ue`\\g<(?<gRNameOrNum>[^>&]+)&R=(?<gRDepth>[^>]+)>`,Gr=ue`\(\?R=(?<rDepth>[^\)]+)\)|${bb}`,La=ue`\(\?<(?![=!])(?<captureName>[^>]+)>`,Fl=ue`${La}|(?<unnamed>\()(?!\?)`,Je=new RegExp(ue`${La}|${Gr}|\(\?|\\?.`,"gsu"),ar="Cannot use multiple overlapping recursions";function _b(e,t){const{hiddenCaptures:n,mode:a}={hiddenCaptures:[],mode:"plugin",...t};let r=t?.captureTransfers??new Map;if(!new RegExp(Gr,"su").test(e))return{pattern:e,captureTransfers:r,hiddenCaptures:n};if(a==="plugin"&&Qn(e,ue`\(\?\(DEFINE\)`,de.DEFAULT))throw new Error("DEFINE groups cannot be used with recursion");const i=[],s=Qn(e,ue`\\[1-9]`,de.DEFAULT),o=new Map,c=[];let l=!1,u=0,p=0,d;for(Je.lastIndex=0;d=Je.exec(e);){const{0:m,groups:{captureName:g,rDepth:v,gRNameOrNum:f,gRDepth:b}}=d;if(m==="[")u++;else if(u)m==="]"&&u--;else if(v){if(Vs(v),l)throw new Error(ar);if(s)throw new Error(`${a==="external"?"Backrefs":"Numbered backrefs"} cannot be used with global recursion`);const _=e.slice(0,d.index),w=e.slice(Je.lastIndex);if(Qn(w,Gr,de.DEFAULT))throw new Error(ar);const h=+v-1;e=Zs(_,w,h,!1,n,i,p),r=Xs(r,_,h,i.length,0,p);break}else if(f){Vs(b);let _=!1;for(const R of c)if(R.name===f||R.num===+f){if(_=!0,R.hasRecursedWithin)throw new Error(ar);break}if(!_)throw new Error(ue`Recursive \g cannot be used outside the referenced group "${a==="external"?f:ue`\g<${f}&R=${b}>`}"`);const w=o.get(f),h=hb(e,w);if(s&&Qn(h,ue`${La}|\((?!\?)`,de.DEFAULT))throw new Error(`${a==="external"?"Backrefs":"Numbered backrefs"} cannot be used with recursion of capturing groups`);const C=e.slice(w,d.index),k=h.slice(C.length+m.length),$=i.length,T=+b-1,N=Zs(C,k,T,!0,n,i,p);r=Xs(r,C,T,i.length-$,$,p);const I=e.slice(0,w),D=e.slice(w+h.length);e=`${I}${N}${D}`,Je.lastIndex+=N.length-m.length-C.length-k.length,c.forEach(R=>R.hasRecursedWithin=!0),l=!0}else if(g)p++,o.set(String(p),Je.lastIndex),o.set(g,Je.lastIndex),c.push({num:p,name:g});else if(m[0]==="("){const _=m==="(";_&&(p++,o.set(String(p),Je.lastIndex)),c.push(_?{num:p}:{})}else m===")"&&c.pop()}return n.push(...i),{pattern:e,captureTransfers:r,hiddenCaptures:n}}function Vs(e){const t=`Max depth must be integer between 2 and 100; used ${e}`;if(!/^[1-9]\d*$/.test(e))throw new Error(t);if(e=+e,e<2||e>100)throw new Error(t)}function Zs(e,t,n,a,r,i,s){const o=new Set;a&&Cl(e+t,La,({groups:{captureName:l}})=>{o.add(l)},de.DEFAULT);const c=[n,a?o:null,r,i,s];return`${e}${Ys(`(?:${e}`,"forward",...c)}(?:)${Ys(`${t})`,"backward",...c)}${t}`}function Ys(e,t,n,a,r,i,s){const c=u=>t==="forward"?u+2:n-u+2-1;let l="";for(let u=0;u<n;u++){const p=c(u);l+=Oi(e,ue`${Fl}|\\k<(?<backref>[^>]+)>`,({0:d,groups:{captureName:m,unnamed:g,backref:v}})=>{if(v&&a&&!a.has(v))return d;const f=`_$${p}`;if(g||m){const b=s+i.length+1;return i.push(b),yb(r,b),g?d:`(?<${m}${f}>`}return ue`\k<${v}${f}>`},de.DEFAULT)}return l}function yb(e,t){for(let n=0;n<e.length;n++)e[n]>=t&&e[n]++}function Xs(e,t,n,a,r,i){if(e.size&&a){let s=0;Cl(t,Fl,()=>s++,de.DEFAULT);const o=i-s+r,c=new Map;return e.forEach((l,u)=>{const p=(a-s*n)/n,d=s*n,m=u>o+s?u+a:u,g=[];for(const v of l)if(v<=o)g.push(v);else if(v>o+s+p)g.push(v+a);else if(v<=o+s)for(let f=0;f<=n;f++)g.push(v+s*f);else for(let f=0;f<=n;f++)g.push(v+d+p*f);c.set(m,g)}),c}return e}var V=String.fromCodePoint,j=String.raw,Le={flagGroups:(()=>{try{new RegExp("(?i:)")}catch{return!1}return!0})(),unicodeSets:(()=>{try{new RegExp("","v")}catch{return!1}return!0})()};Le.bugFlagVLiteralHyphenIsRange=Le.unicodeSets?(()=>{try{new RegExp(j`[\d\-a]`,"v")}catch{return!0}return!1})():!1;Le.bugNestedClassIgnoresNegation=Le.unicodeSets&&new RegExp("[[^a]]","v").test("a");function xa(e,{enable:t,disable:n}){return{dotAll:!n?.dotAll&&!!(t?.dotAll||e.dotAll),ignoreCase:!n?.ignoreCase&&!!(t?.ignoreCase||e.ignoreCase)}}function yn(e,t,n){return e.has(t)||e.set(t,n),e.get(t)}function Hr(e,t){return Ks[e]>=Ks[t]}function vb(e,t){if(e==null)throw new Error(t??"Value expected");return e}var Ks={ES2025:2025,ES2024:2024,ES2018:2018},wb={auto:"auto",ES2025:"ES2025",ES2024:"ES2024",ES2018:"ES2018"};function $l(e={}){if({}.toString.call(e)!=="[object Object]")throw new Error("Unexpected options");if(e.target!==void 0&&!wb[e.target])throw new Error(`Unexpected target "${e.target}"`);const t={accuracy:"default",avoidSubclass:!1,flags:"",global:!1,hasIndices:!1,lazyCompileLength:1/0,target:"auto",verbose:!1,...e,rules:{allowOrphanBackrefs:!1,asciiWordBoundaries:!1,captureGroup:!1,recursionLimit:20,singleline:!1,...e.rules}};return t.target==="auto"&&(t.target=Le.flagGroups?"ES2025":Le.unicodeSets?"ES2024":"ES2018"),t}var xb="[	-\r ]",kb=new Set([V(304),V(305)]),Oe=j`[\p{L}\p{M}\p{N}\p{Pc}]`;function jl(e){if(kb.has(e))return[e];const t=new Set,n=e.toLowerCase(),a=n.toUpperCase(),r=Fb.get(n),i=Cb.get(n),s=Eb.get(n);return[...a].length===1&&t.add(a),s&&t.add(s),r&&t.add(r),t.add(n),i&&t.add(i),[...t]}var Ii=new Map(`C Other
+Cc Control cntrl
+Cf Format
+Cn Unassigned
+Co Private_Use
+Cs Surrogate
+L Letter
+LC Cased_Letter
+Ll Lowercase_Letter
+Lm Modifier_Letter
+Lo Other_Letter
+Lt Titlecase_Letter
+Lu Uppercase_Letter
+M Mark Combining_Mark
+Mc Spacing_Mark
+Me Enclosing_Mark
+Mn Nonspacing_Mark
+N Number
+Nd Decimal_Number digit
+Nl Letter_Number
+No Other_Number
+P Punctuation punct
+Pc Connector_Punctuation
+Pd Dash_Punctuation
+Pe Close_Punctuation
+Pf Final_Punctuation
+Pi Initial_Punctuation
+Po Other_Punctuation
+Ps Open_Punctuation
+S Symbol
+Sc Currency_Symbol
+Sk Modifier_Symbol
+Sm Math_Symbol
+So Other_Symbol
+Z Separator
+Zl Line_Separator
+Zp Paragraph_Separator
+Zs Space_Separator
+ASCII
+ASCII_Hex_Digit AHex
+Alphabetic Alpha
+Any
+Assigned
+Bidi_Control Bidi_C
+Bidi_Mirrored Bidi_M
+Case_Ignorable CI
+Cased
+Changes_When_Casefolded CWCF
+Changes_When_Casemapped CWCM
+Changes_When_Lowercased CWL
+Changes_When_NFKC_Casefolded CWKCF
+Changes_When_Titlecased CWT
+Changes_When_Uppercased CWU
+Dash
+Default_Ignorable_Code_Point DI
+Deprecated Dep
+Diacritic Dia
+Emoji
+Emoji_Component EComp
+Emoji_Modifier EMod
+Emoji_Modifier_Base EBase
+Emoji_Presentation EPres
+Extended_Pictographic ExtPict
+Extender Ext
+Grapheme_Base Gr_Base
+Grapheme_Extend Gr_Ext
+Hex_Digit Hex
+IDS_Binary_Operator IDSB
+IDS_Trinary_Operator IDST
+ID_Continue IDC
+ID_Start IDS
+Ideographic Ideo
+Join_Control Join_C
+Logical_Order_Exception LOE
+Lowercase Lower
+Math
+Noncharacter_Code_Point NChar
+Pattern_Syntax Pat_Syn
+Pattern_White_Space Pat_WS
+Quotation_Mark QMark
+Radical
+Regional_Indicator RI
+Sentence_Terminal STerm
+Soft_Dotted SD
+Terminal_Punctuation Term
+Unified_Ideograph UIdeo
+Uppercase Upper
+Variation_Selector VS
+White_Space space
+XID_Continue XIDC
+XID_Start XIDS`.split(/\s/).map(e=>[Na(e),e])),Cb=new Map([["s",V(383)],[V(383),"s"]]),Eb=new Map([[V(223),V(7838)],[V(107),V(8490)],[V(229),V(8491)],[V(969),V(8486)]]),Fb=new Map([Be(453),Be(456),Be(459),Be(498),...rr(8072,8079),...rr(8088,8095),...rr(8104,8111),Be(8124),Be(8140),Be(8188)]),$b=new Map([["alnum",j`[\p{Alpha}\p{Nd}]`],["alpha",j`\p{Alpha}`],["ascii",j`\p{ASCII}`],["blank",j`[\p{Zs}\t]`],["cntrl",j`\p{Cc}`],["digit",j`\p{Nd}`],["graph",j`[\P{space}&&\P{Cc}&&\P{Cn}&&\P{Cs}]`],["lower",j`\p{Lower}`],["print",j`[[\P{space}&&\P{Cc}&&\P{Cn}&&\P{Cs}]\p{Zs}]`],["punct",j`[\p{P}\p{S}]`],["space",j`\p{space}`],["upper",j`\p{Upper}`],["word",j`[\p{Alpha}\p{M}\p{Nd}\p{Pc}]`],["xdigit",j`\p{AHex}`]]);function jb(e,t){const n=[];for(let a=e;a<=t;a++)n.push(a);return n}function Be(e){const t=V(e);return[t.toLowerCase(),t]}function rr(e,t){return jb(e,t).map(n=>Be(n))}var Sl=new Set(["Lower","Lowercase","Upper","Uppercase","Ll","Lowercase_Letter","Lt","Titlecase_Letter","Lu","Uppercase_Letter"]);function Sb(e,t){const n={accuracy:"default",asciiWordBoundaries:!1,avoidSubclass:!1,bestEffortTarget:"ES2025",...t};Al(e);const a={accuracy:n.accuracy,asciiWordBoundaries:n.asciiWordBoundaries,avoidSubclass:n.avoidSubclass,flagDirectivesByAlt:new Map,jsGroupNameMap:new Map,minTargetEs2024:Hr(n.bestEffortTarget,"ES2024"),passedLookbehind:!1,strategy:null,subroutineRefMap:new Map,supportedGNodes:new Set,digitIsAscii:e.flags.digitIsAscii,spaceIsAscii:e.flags.spaceIsAscii,wordIsAscii:e.flags.wordIsAscii};pn(e,Ab,a);const r={dotAll:e.flags.dotAll,ignoreCase:e.flags.ignoreCase},i={currentFlags:r,prevFlags:null,globalFlags:r,groupOriginByCopy:new Map,groupsByName:new Map,multiplexCapturesToLeftByRef:new Map,openRefs:new Map,reffedNodesByReferencer:new Map,subroutineRefMap:a.subroutineRefMap};pn(e,Tb,i);const s={groupsByName:i.groupsByName,highestOrphanBackref:0,numCapturesToLeft:0,reffedNodesByReferencer:i.reffedNodesByReferencer};return pn(e,Rb,s),e._originMap=i.groupOriginByCopy,e._strategy=a.strategy,e}var Ab={AbsenceFunction({node:e,parent:t,replaceWith:n}){const{body:a,kind:r}=e;if(r==="repeater"){const i=be();i.body[0].body.push(at({negate:!0,body:a}),Ft("Any"));const s=be();s.body[0].body.push(wl("greedy",0,1/0,i)),n(B(s,t),{traverse:!0})}else throw new Error('Unsupported absence function "(?~|"')},Alternative:{enter({node:e,parent:t,key:n},{flagDirectivesByAlt:a}){const r=e.body.filter(i=>i.kind==="flags");for(let i=n+1;i<t.body.length;i++){const s=t.body[i];yn(a,s,[]).push(...r)}},exit({node:e},{flagDirectivesByAlt:t}){if(t.get(e)?.length){const n=Rl(t.get(e));if(n){const a=be({flags:n});a.body[0].body=e.body,e.body=[B(a,e)]}}}},Assertion({node:e,parent:t,key:n,container:a,root:r,remove:i,replaceWith:s},o){const{kind:c,negate:l}=e,{asciiWordBoundaries:u,avoidSubclass:p,supportedGNodes:d,wordIsAscii:m}=o;if(c==="text_segment_boundary")throw new Error(`Unsupported text segment boundary "\\${l?"Y":"y"}"`);if(c==="line_end")s(B(at({body:[ht({body:[zr("string_end")]}),ht({body:[Ia(10)]})]}),t));else if(c==="line_start")s(B(Ie(j`(?<=\A|\n(?!\z))`,{skipLookbehindValidation:!0}),t));else if(c==="search_start")if(d.has(e))r.flags.sticky=!0,i();else{const g=a[n-1];if(g&&Db(g))s(B(at({negate:!0}),t));else{if(p)throw new Error(j`Uses "\G" in a way that requires a subclass`);s(Ue(zr("string_start"),t)),o.strategy="clip_search"}}else if(!(c==="string_end"||c==="string_start"))if(c==="string_end_newline")s(B(Ie(j`(?=\n?\z)`),t));else if(c==="word_boundary"){if(!m&&!u){const g=`(?:(?<=${Oe})(?!${Oe})|(?<!${Oe})(?=${Oe}))`,v=`(?:(?<=${Oe})(?=${Oe})|(?<!${Oe})(?!${Oe}))`;s(B(Ie(l?v:g),t))}}else throw new Error(`Unexpected assertion kind "${c}"`)},Backreference({node:e},{jsGroupNameMap:t}){let{ref:n}=e;typeof n=="string"&&!sr(n)&&(n=ir(n,t),e.ref=n)},CapturingGroup({node:e},{jsGroupNameMap:t,subroutineRefMap:n}){let{name:a}=e;a&&!sr(a)&&(a=ir(a,t),e.name=a),n.set(e.number,e),a&&n.set(a,e)},CharacterClassRange({node:e,parent:t,replaceWith:n}){if(t.kind==="intersection"){const a=ra({body:[e]});n(B(a,t),{traverse:!0})}},CharacterSet({node:e,parent:t,replaceWith:n},{accuracy:a,minTargetEs2024:r,digitIsAscii:i,spaceIsAscii:s,wordIsAscii:o}){const{kind:c,negate:l,value:u}=e;if(i&&(c==="digit"||u==="digit")){n(Ue(Ur("digit",{negate:l}),t));return}if(s&&(c==="space"||u==="space")){n(B(or(Ie(xb),l),t));return}if(o&&(c==="word"||u==="word")){n(Ue(Ur("word",{negate:l}),t));return}if(c==="any")n(Ue(Ft("Any"),t));else if(c==="digit")n(Ue(Ft("Nd",{negate:l}),t));else if(c!=="dot")if(c==="text_segment"){if(a==="strict")throw new Error(j`Use of "\X" requires non-strict accuracy`);const p="\\p{Emoji}(?:\\p{EMod}|\\uFE0F\\u20E3?|[\\x{E0020}-\\x{E007E}]+\\x{E007F})?",d=j`\p{RI}{2}|${p}(?:\u200D${p})*`;n(B(Ie(j`(?>\r\n|${r?j`\p{RGI_Emoji}`:d}|\P{M}\p{M}*)`,{skipPropertyNameValidation:!0}),t))}else if(c==="hex")n(Ue(Ft("AHex",{negate:l}),t));else if(c==="newline")n(B(Ie(l?`[^
+]`:`(?>\r
+?|[
+\v\f\u2028\u2029])`),t));else if(c==="posix")if(!r&&(u==="graph"||u==="print")){if(a==="strict")throw new Error(`POSIX class "${u}" requires min target ES2024 or non-strict accuracy`);let p={graph:"!-~",print:" -~"}[u];l&&(p=`\0-${V(p.codePointAt(0)-1)}${V(p.codePointAt(2)+1)}-􏿿`),n(B(Ie(`[${p}]`),t))}else n(B(or(Ie($b.get(u)),l),t));else if(c==="property")Ii.has(Na(u))||(e.key="sc");else if(c==="space")n(Ue(Ft("space",{negate:l}),t));else if(c==="word")n(B(or(Ie(Oe),l),t));else throw new Error(`Unexpected character set kind "${c}"`)},Directive({node:e,parent:t,root:n,remove:a,replaceWith:r,removeAllPrevSiblings:i,removeAllNextSiblings:s}){const{kind:o,flags:c}=e;if(o==="flags")if(!c.enable&&!c.disable)a();else{const l=be({flags:c});l.body[0].body=s(),r(B(l,t),{traverse:!0})}else if(o==="keep"){const l=n.body[0],p=n.body.length===1&&_l(l,{type:"Group"})&&l.body[0].body.length===1?l.body[0]:n;if(t.parent!==p||p.body.length>1)throw new Error(j`Uses "\K" in a way that's unsupported`);const d=at({behind:!0});d.body[0].body=i(),r(B(d,t))}else throw new Error(`Unexpected directive kind "${o}"`)},Flags({node:e,parent:t}){if(e.posixIsAscii)throw new Error('Unsupported flag "P"');if(e.textSegmentMode==="word")throw new Error('Unsupported flag "y{w}"');["digitIsAscii","extended","posixIsAscii","spaceIsAscii","wordIsAscii","textSegmentMode"].forEach(n=>delete e[n]),Object.assign(e,{global:!1,hasIndices:!1,multiline:!1,sticky:e.sticky??!1}),t.options={disable:{x:!0,n:!0},force:{v:!0}}},Group({node:e}){if(!e.flags)return;const{enable:t,disable:n}=e.flags;t?.extended&&delete t.extended,n?.extended&&delete n.extended,t?.dotAll&&n?.dotAll&&delete t.dotAll,t?.ignoreCase&&n?.ignoreCase&&delete t.ignoreCase,t&&!Object.keys(t).length&&delete e.flags.enable,n&&!Object.keys(n).length&&delete e.flags.disable,!e.flags.enable&&!e.flags.disable&&delete e.flags},LookaroundAssertion({node:e},t){const{kind:n}=e;n==="lookbehind"&&(t.passedLookbehind=!0)},NamedCallout({node:e,parent:t,replaceWith:n}){const{kind:a}=e;if(a==="fail")n(B(at({negate:!0}),t));else throw new Error(`Unsupported named callout "(*${a.toUpperCase()}"`)},Quantifier({node:e}){if(e.body.type==="Quantifier"){const t=be();t.body[0].body.push(e.body),e.body=B(t,e)}},Regex:{enter({node:e},{supportedGNodes:t}){const n=[];let a=!1,r=!1;for(const i of e.body)if(i.body.length===1&&i.body[0].kind==="search_start")i.body.pop();else{const s=Il(i.body);s?(a=!0,Array.isArray(s)?n.push(...s):n.push(s)):r=!0}a&&!r&&n.forEach(i=>t.add(i))},exit(e,{accuracy:t,passedLookbehind:n,strategy:a}){if(t==="strict"&&n&&a)throw new Error(j`Uses "\G" in a way that requires non-strict accuracy`)}},Subroutine({node:e},{jsGroupNameMap:t}){let{ref:n}=e;typeof n=="string"&&!sr(n)&&(n=ir(n,t),e.ref=n)}},Tb={Backreference({node:e},{multiplexCapturesToLeftByRef:t,reffedNodesByReferencer:n}){const{orphan:a,ref:r}=e;a||n.set(e,[...t.get(r).map(({node:i})=>i)])},CapturingGroup:{enter({node:e,parent:t,replaceWith:n,skip:a},{groupOriginByCopy:r,groupsByName:i,multiplexCapturesToLeftByRef:s,openRefs:o,reffedNodesByReferencer:c}){const l=r.get(e);if(l&&o.has(e.number)){const p=Ue(Qs(e.number),t);c.set(p,o.get(e.number)),n(p);return}o.set(e.number,e),s.set(e.number,[]),e.name&&yn(s,e.name,[]);const u=s.get(e.name??e.number);for(let p=0;p<u.length;p++){const d=u[p];if(l===d.node||l&&l===d.origin||e===d.origin){u.splice(p,1);break}}if(s.get(e.number).push({node:e,origin:l}),e.name&&s.get(e.name).push({node:e,origin:l}),e.name){const p=yn(i,e.name,new Map);let d=!1;if(l)d=!0;else for(const m of p.values())if(!m.hasDuplicateNameToRemove){d=!0;break}i.get(e.name).set(e,{node:e,hasDuplicateNameToRemove:d})}},exit({node:e},{openRefs:t}){t.delete(e.number)}},Group:{enter({node:e},t){t.prevFlags=t.currentFlags,e.flags&&(t.currentFlags=xa(t.currentFlags,e.flags))},exit(e,t){t.currentFlags=t.prevFlags}},Subroutine({node:e,parent:t,replaceWith:n},a){const{isRecursive:r,ref:i}=e;if(r){let u=t;for(;(u=u.parent)&&!(u.type==="CapturingGroup"&&(u.name===i||u.number===i)););a.reffedNodesByReferencer.set(e,u);return}const s=a.subroutineRefMap.get(i),o=i===0,c=o?Qs(0):Tl(s,a.groupOriginByCopy,null);let l=c;if(!o){const u=Rl(Nb(s,d=>d.type==="Group"&&!!d.flags)),p=u?xa(a.globalFlags,u):a.globalFlags;Ob(p,a.currentFlags)||(l=be({flags:Lb(p)}),l.body[0].body.push(c))}n(B(l,t),{traverse:!o})}},Rb={Backreference({node:e,parent:t,replaceWith:n},a){if(e.orphan){a.highestOrphanBackref=Math.max(a.highestOrphanBackref,e.ref);return}const i=a.reffedNodesByReferencer.get(e).filter(s=>Ib(s,e));if(!i.length)n(B(at({negate:!0}),t));else if(i.length>1){const s=be({atomic:!0,body:i.reverse().map(o=>ht({body:[Br(o.number)]}))});n(B(s,t))}else e.ref=i[0].number},CapturingGroup({node:e},t){e.number=++t.numCapturesToLeft,e.name&&t.groupsByName.get(e.name).get(e).hasDuplicateNameToRemove&&delete e.name},Regex:{exit({node:e},t){const n=Math.max(t.highestOrphanBackref-t.numCapturesToLeft,0);for(let a=0;a<n;a++){const r=vl();e.body.at(-1).body.push(r)}}</script>
+</body>
+</html>
+
+    at getError (element-plus.js?v=74a23d08:51159:9)
+    at XMLHttpRequest.<anonymous> (element-plus.js?v=74a23d08:51190:68)
+handleError @ element-plus.js?v=74a23d08:51853
+onError @ element-plus.js?v=74a23d08:51755
+(anonymous) @ element-plus.js?v=74a23d08:51190
+XMLHttpRequest.send
+ajaxUpload @ element-plus.js?v=74a23d08:51201
+doUpload @ element-plus.js?v=74a23d08:51759
+await in doUpload
+upload @ element-plus.js?v=74a23d08:51724
+await in upload
+(anonymous) @ element-plus.js?v=74a23d08:51907
+submit @ element-plus.js?v=74a23d08:51907
+(anonymous) @ UserInfo.vue:167
+callWithErrorHandling @ vue.runtime.esm-bundler-CPnnkeib.js?v=74a23d08:1883
+callWithAsyncErrorHandling @ vue.runtime.esm-bundler-CPnnkeib.js?v=74a23d08:1890
+emit @ vue.runtime.esm-bundler-CPnnkeib.js?v=74a23d08:4647
+(anonymous) @ vue.runtime.esm-bundler-CPnnkeib.js?v=74a23d08:6839
+handleClick @ element-plus.js?v=74a23d08:15118
+callWithErrorHandling @ vue.runtime.esm-bundler-CPnnkeib.js?v=74a23d08:1883
+callWithAsyncErrorHandling @ vue.runtime.esm-bundler-CPnnkeib.js?v=74a23d08:1890
+invoker @ vue.runtime.esm-bundler-CPnnkeib.js?v=74a23d08:7636Understand this error
