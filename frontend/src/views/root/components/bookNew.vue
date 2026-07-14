@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p style="text-align: center;font-size: larger;font-weight: bolder;">新书</p>
     <el-row :gutter="24">
       <el-col :span="18">
         <el-input
@@ -79,9 +80,9 @@
   <el-button
     type="primary"
     style="height: 5%; margin-top: 2%; width: 48%; margin-left: 4%"
-    @click="updateBookInfo"
+    @click="addBookInfo"
   >
-    更新
+    添加
   </el-button>
 </template>
 
@@ -99,11 +100,10 @@ import {
 import { Editor, Toolbar } from "@wangeditor/editor-for-vue"
 import { ElMessage } from "element-plus"
 
-import { updataBook } from "@/api/root"
-import { getBookInfo } from "@/api/book"
 import { getAllCategoty } from "@/api/categoty.js"
 
 import bookReWritePhoto from "./bookReWritePhoto.vue"
+import { addaBook } from "@/api/root.js"
 
 
 // ==================== Props ====================
@@ -148,35 +148,6 @@ const bookInfo = reactive({
   stock: "",
   category_id: ""
 })
-
-
-// ==================== 查询书籍 ====================
-
-const loadBookInfo = async () => {
-  try {
-    const res = await getBookInfo(props.bookId)
-
-
-    bookInfo.title = res.title
-    bookInfo.author = res.author
-    bookInfo.stock = res.stock
-    bookInfo.category_id = res.category_id
-
-    valueHtml.value = res.description
-
-    bookImg.value =
-      "http://127.0.0.1:8000/storage/Book/" +
-      res.cover +
-      ".jpg"
-
-    // 换书时清空之前选择的新图片
-    coverFile.value = null
-
-  } catch (error) {
-
-    ElMessage.error("获取书籍信息失败")
-  }
-}
 
 
 // ==================== 查询分类 ====================
@@ -272,7 +243,7 @@ const clear = () => {
 
 // ==================== 更新书籍 ====================
 
-const updateBookInfo = async () => {
+const addBookInfo = async () => {
 
   // 检查空值
   if (
@@ -280,8 +251,7 @@ const updateBookInfo = async () => {
     !bookInfo.author ||
     bookInfo.stock === "" ||
     !bookInfo.category_id ||
-    !valueHtml.value ||
-    !props.bookId
+    !valueHtml.value
   ) {
     ElMessage.warning("所有值都不能为空！")
     return
@@ -324,23 +294,20 @@ const updateBookInfo = async () => {
 
   try {
 
-    const res = await updataBook(
-      data,
-      token
-    )
-    if (res.msg=="更新成功"){
+    
+    const res = await addaBook(data,token)
+    if (res.msg=="添加成功"){
       ElMessage.success("更新成功")
     }
     else {
       ElMessage.warning("错误，请重试")
     }
-
     emit("success")
 
   } catch (error) {
 
-
-    ElMessage.error("更新失败")
+    console.log(error)
+    ElMessae.error("更新失败")
   }
 }
 

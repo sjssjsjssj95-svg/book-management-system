@@ -37,8 +37,8 @@
                                 <el-button>搜索</el-button>
                             </template>
                         </el-input>
-                        <el-button type="primary" style="margin-left: 10px;">添加新图书</el-button>
-                        <el-button type="primary" style="margin-left: 10px;">书本类型管理</el-button>
+                        <el-button type="primary" style="margin-left: 10px;" @click="newBookDrawer=true">添加新图书</el-button>
+                        <el-button type="primary" style="margin-left: 10px;" @click="categoryDrawer=true">书本类型管理</el-button>
                     </div>
                     <el-row :gutter="20">
                             <el-col :span="3" style="text-align: center;">
@@ -116,6 +116,14 @@
     <el-drawer v-model="drawer" title="I am the title" :with-header="false" size="60%">
         <bookReWrite  :key="reWriteBookId" :bookId="reWriteBookId" @success="updataBookSuccess"/>
     </el-drawer>
+
+    <el-drawer v-model="categoryDrawer" title="I am the title" :with-header="false" size="20%">
+        <category/>
+    </el-drawer>
+
+    <el-drawer v-model="newBookDrawer" title="I am the title" :with-header="false" size="60%">
+        <bookNew @success="addBookSuccess"/>
+    </el-drawer>
 </template>
 
 <script setup>
@@ -127,6 +135,8 @@ import { ElMessage, ElMessageBox } from 'element-plus'
 import { getAllCategoty } from '@/api/categoty';
 import { getBooksByCategoty } from '@/api/book';
 import bookReWrite from './components/bookReWrite.vue';
+import category from './components/category.vue';
+import bookNew from './components/bookNew.vue';
 
 
 const mainLoading = ref(true)
@@ -148,6 +158,8 @@ const selectInput = ref('')
 const selectType = ref('title')
 
 const drawer = ref(false)
+const categoryDrawer = ref(false)
+const newBookDrawer = ref(false)
 
 
 const value = ref(0)
@@ -164,6 +176,7 @@ token.value = localStorage.getItem('root_token')
 
 const getAllBooksAction = () => {
     getAllBooks(token.value).then(res=>{
+        console.log(res)
         mainLoading.value = true
         booksLength.value = res.length
         for (let i=0;i<res.length;i++) {
@@ -233,6 +246,11 @@ const openChangeDrawer = (a) => {
 
 const updataBookSuccess = () => {
     drawer.value = false
+    getAllBooksAction()
+}
+
+const addBookSuccess = () => {
+    newBookDrawer.value = false 
     getAllBooksAction()
 }
 </script>

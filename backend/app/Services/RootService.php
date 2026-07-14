@@ -184,6 +184,7 @@ class RootService
             ->get()
             ->map(function ($book) {
                 $category = Category::find($book->category_id);
+                $book->cover = $book->cover ?: 'mr';
                 return [
                     'id'          => $book->id,
                     'title'       => $book->title,
@@ -275,6 +276,12 @@ class RootService
 
         $book = Book::where('id', $data['book_id'])->first();
 
+        if (!empty($book->cover)) {
+            Storage::disk('public')->delete(
+                'Book/' . $book->cover . '.jpg'
+            );
+        }
+
         if ($book) {
             $book->delete();
             return [
@@ -285,9 +292,101 @@ class RootService
 
         throw new \Exception("此书不存在或者出现错误，请重试",0005);
     }
-    //修改Book
-    
+    //查询所有分类
+    public function get_all_category($root)
+    {
+        if (!$root) {
+            throw new \Exception('没有登录', 0000);
+        }
 
+        $categories = Category::all();
+
+        return $categories;
+    }
+    //删除分类
+    public function delete_category($data, $root)
+    {
+        if (!$root) {
+            throw new \Exception('没有登录', 0000);
+        }
+
+        $categorie = Category::where('id',$data['id'])->first();
+
+        $categorie->delete();
+
+        return [
+            'msg' => '200'
+        ];
+    }
+    //添加类别
+    public function add_category($data, $root)
+    {
+        if (!$root) {
+            throw new \Exception('没有登录', 0000);
+        }
+
+        $categorie = Category::where('name',$data['name'])->first();
+
+        if (!empty($categorie))
+        {
+            throw new \Exception('已有此类别', 1000);
+        }
+
+        Category::create([
+            'name' => $data['name'],
+        ]);
+        return [
+            'msg' => '200'
+        ];
+    }
+    // 添加书籍
+    public function add_book(array $data, $root)
+    {
+        if (!$root) {
+            throw new \Exception('没有登录', 0000);
+        }
+
+        // 查询分类
+        $category = Category::find($data['category_id']);
+
+        if (!$category) {
+            throw new \Exception('分类不存在', 404);
+        }
+
+        // 创建书籍
+        $book = new Book();
+
+        $book->title = $data['title'];
+        $book->author = $data['author'];
+        $book->category_id = $category->id;
+        $book->description = $data['description'];
+        $book->stock = $data['stock'];
+
+        // 上传封面
+        if (isset($data['cover'])) {
+
+            // 生成图片名称
+            $coverName = uniqid();
+
+            // 保存图片
+            $data['cover']->storeAs(
+                'Book',
+                $coverName . '.jpg',
+                'public'
+            );
+
+            // 保存图片名
+            $book->cover = $coverName;
+        }
+
+        $book->created_at = Carbon::now();
+
+        $book->save();
+
+        return [
+            'msg' => '添加成功'
+        ];
+    }
 
 
 
@@ -505,4 +604,7 @@ class RootService
 
         return ['msg'=> '1'];
     }
+
+
+    
 }

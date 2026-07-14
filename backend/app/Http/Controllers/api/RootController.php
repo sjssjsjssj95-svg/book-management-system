@@ -135,6 +135,54 @@ class RootController extends Controller
         }
     }
 
+    public function get_all_category(Request $request)
+    {
+        $root = $request->user();
+
+        try {
+            $return_root = $this->rootService->get_all_category($root);
+            return $return_root;
+        } catch (\Exception $e) {
+            return response()->json(['msg' => $e->getMessage(),'code' => $e->getCode()]);
+        }
+    }
+
+    public function delete_category(Request $request)
+    {
+        $root = $request->user();
+
+        try {
+            $return_root = $this->rootService->delete_category($request->all(), $root);
+            return $return_root;
+        } catch (\Exception $e) {
+            return response()->json(['msg' => $e->getMessage(),'code' => $e->getCode()]);
+        }
+    }
+
+    public function add_category(Request $request)
+    {
+        $root = $request->user();
+
+        try {
+            $return_root = $this->rootService->add_category($request->all(), $root);
+            return $return_root;
+        } catch (\Exception $e) {
+            return response()->json(['msg' => $e->getMessage(),'code' => $e->getCode()]);
+        }
+    }
+
+    public function add_book(Request $request)
+    {
+        $root = $request->user();
+
+        try {
+            $return_root = $this->rootService->add_book($request->all(), $root);
+            return $return_root;
+        } catch (\Exception $e) {
+            return response()->json(['msg' => $e->getMessage(),'code' => $e->getCode()]);
+        }
+    }
+
     public function add_info(Request $request)
     {
         $root = $request->user();

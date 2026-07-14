@@ -44,7 +44,7 @@
                 <el-form-item>
                     <el-button type="primary" @click="resetPassword">重置密码</el-button>
                     <el-button type="info" @click="sendCode">发送验证码</el-button>
-                    <el-button>清空</el-button>
+                    <el-button @clike="qk">清空</el-button>
                 </el-form-item>
             </el-form>
         </div>
@@ -54,7 +54,7 @@
 <script setup>
 import Router from './components/Router.vue';
 import { ref , reactive } from 'vue';
-import { login , findPasswordSned , findPasswrd } from '@/api/root'
+import { login , findNoLoginPasswordSned , findNoLoginPasswrd } from '@/api/root'
 import { ElMessage } from 'element-plus'
 import { useRoute , useRouter } from 'vue-router'
 const route = useRoute()
@@ -123,7 +123,7 @@ const sendCode = () => {
         })
     }
     else {
-        findPasswordSned(form.email).then(res=>{
+        findNoLoginPasswordSned(form.email).then(res=>{
             if (res.code==3000) {
                ElMessage({
                     message: '未找到该管理员，请确认后重试!',
@@ -159,7 +159,7 @@ const resetPassword = ( ) => {
             email: form.email.trim(),
             code: form.code.trim(),
         }
-        findPasswrd(data).then(res=>{
+        findNoLoginPasswrd(data).then(res=>{
             let code = res.code
             if (code == 200) {
                 ElMessage({
@@ -192,5 +192,11 @@ const resetPassword = ( ) => {
             }
         })
     }
+}
+
+const qk = () => {
+    form.email = ''
+    form.code = ''
+    form.password = ''
 }
 </script>

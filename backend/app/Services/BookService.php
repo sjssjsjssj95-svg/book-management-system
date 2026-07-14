@@ -12,6 +12,7 @@ class BookService
             ->get()
             ->map(function ($book) {
                 $category = Category::find($book->category_id);
+                $book->cover = $book->cover ?: 'mr';
                 return [
                     'id'          => $book->id,
                     'title'       => $book->title,
@@ -33,6 +34,7 @@ class BookService
             ->take(4)
             ->map(function ($book) {
                 $category = Category::find($book->category_id)->first();
+                $book->cover = $book->cover ?: 'mr';
                 return [
                     'id'          => $book->id,
                     'title'       => $book->title,
@@ -55,6 +57,7 @@ class BookService
         }
         else {
         $category = Category::find($book->category_id)->first();
+                $book->cover = $book->cover ?: 'mr';
            return [
                 'id'          => $book->id,
                 'stock'       => $book->stock,
@@ -78,6 +81,7 @@ class BookService
             ->get()
             ->map(function ($book) {
                 $category = Category::find($book->category_id)->first();
+                $book->cover = $book->cover ?: 'mr';
                 return [
                     'id'          => $book->id,
                     'title'       => $book->title,
@@ -94,6 +98,7 @@ class BookService
         ->get()
         ->map(function ($book) {
             $category = Category::find($book->category_id)->first();
+                $book->cover = $book->cover ?: 'mr';
             return [
                 'id'          => $book->id,
                 'title'       => $book->title,
@@ -116,6 +121,7 @@ class BookService
         ->get()
         ->map(function ($book) {
             $category = Category::find($book->category_id)->first();
+                $book->cover = $book->cover ?: 'mr';
             return [
                 'id'          => $book->id,
                 'title'       => $book->title,

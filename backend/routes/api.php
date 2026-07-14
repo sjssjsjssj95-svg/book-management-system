@@ -37,6 +37,10 @@ Route::post('/user/find/password', [UserController::class, 'resetPassword']);
 
 Route::post('/root/login', [RootController::class, 'login']);
 
+Route::post('/root/nologin/reset/password/send', [RootController::class, 'sendEmailCodeToPassword']);
+
+Route::post('/root/nologin/reset/password', [RootController::class, 'resetPassword']);
+
 
 
 //以下是user权限
@@ -91,6 +95,13 @@ Route::middleware('auth:sanctum')->group(function () {
     
     Route::post('/root/book/updata', [RootController::class, 'updata_book']);
 
+    Route::get('/root/categorie/all', [RootController::class, 'get_all_category']);
+
+    Route::post('/root/categorie/delete', [RootController::class, 'delete_category']);
+
+    Route::post('/root/categorie/add', [RootController::class, 'add_category']);
+
+    Route::post('/root/book/add', [RootController::class, 'add_book']);
 
 
 

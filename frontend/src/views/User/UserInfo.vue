@@ -162,6 +162,7 @@ getUserInfo(token.value).then(res=>{
     else {
         userinfo[4] = 'http://127.0.0.1:8000/storage/'+res.avatar
     }
+    console.log(userinfo[4])
     loading.value=false
 })
 
