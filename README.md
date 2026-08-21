@@ -1,10 +1,26 @@
+# 図書館管理システム
+
+## スクリーンショット
+
+<div>
+<img src="./photo/1.png" width="300">
+<img src="./photo/2.png" width="300">
+<img src="./photo/3.png" width="300">
+<img src="./photo/4.png" width="300">
+<img src="./photo/5.png" width="300">
+<img src="./photo/6.png" width="300">
+<img src="./photo/7.png" width="300">
+<img src="./photo/8.png" width="300">
+<img src="./photo/9.png" width="300">
+<img src="./photo/10.png" width="300">
+</div>
+
 # 📚 図書管理システム（Library Management System）
 
 ## 概要
 
 本システムは **Vue 3** と **Laravel 12** を用いて開発したフロントエンド・バックエンド分離型の図書管理システムです。
 利用者向け機能と管理者向け機能を備えており、図書館や小規模な書籍管理システムを想定して開発しました。
-
 ---
 
 ## 使用技術
